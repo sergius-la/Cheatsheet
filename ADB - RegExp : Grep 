@@ -1,0 +1,24 @@
+-- Regular Expressions --
+
+grep "pattern" "file_name" -- Search pattern in the file
+grep "pattern1\|pattern2"
+
+ -i ignore case sensetive
+ -v returns lines that do not match the pattern
+ -c return the count(number of lines)
+ -w return lines where pattern is separate word
+ -n preceds each line with the line number
+ -r search in any direction
+
+--color Return coloring
+
+grep -i "pattern" "file_name" -- Search pattern ignore case sensetive
+
+grep -v "pattern" "file_name" -- Search pattern lines that do not match the pattern
+
+
+-- Command Combinatiom
+grep -i -v error catalina.out.txt | wc -l
+ 1003906 -- -v find all now matches to text
+
+-- RegExp 

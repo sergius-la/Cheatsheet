@@ -1,0 +1,31 @@
+-- Install Apk --
+
+install -r replace / reinstall
+install -s install in a sdcard
+install -d downgrade
+
+-- Reinstall Application from current directory --
+abd - LGMP260e87dd500 install -r __package_name__
+
+adb -s "serial number" "directory"/"file_name.apk"
+
+adb -s LGMP260e87dd500 install /Users/sergey/Desktop/com.united.mobile.apk
+
+-- Install on remote device --
+adb -s "IP":"Port" install "directory"/"file_name.apk"
+
+-- Install new build from Desktop --
+adb install -r /Users/sergey/Desktop/"file_name"
+-- Install Apk --
+
+
+
+
+-- Delete Apk --
+
+-k keeps the data in the cache after package removal
+
+adb -s "serial number" uninstall "file_name.android"
+
+adb -s 192.168.4.124:5556 uninstall com.united.mobile.android
+-- Delete Apk --

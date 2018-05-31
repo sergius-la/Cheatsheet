@@ -1,0 +1,32 @@
+-- Logs from Device --
+
+logcat *:E - for error logs only
+logcat *:F - for fatal logs only
+logcat *:I - for information logs only
+logcat *:V - for verbose logs only
+logcat *:D - for debugging logs only
+logcat *:W - for warning logs only
+
+logcat -d - Dump logs from buffer
+logcat -c - Clear buffer
+
+-- Save logs to current directory --
+adb logcat -d > logs.txt
+
+-- Device logs
+adb -s "serial number" logcat
+
+
+-- Create a log in a text file
+adb -s "serial number" logcat -d >"file_name.txt"
+adb -s LGMP260e87dd500 logcat -d >1234.txt
+
+
+
+-- Create Application Log File -- ??
+adb -s "serial number" logcat>"file_name.txt" | adb -s "serial number" shell grep "package_name"
+
+
+adb –s “IP”:5555 | grep “com.united.mobile.android”
+adb logcat | grep united > 12.txt
+-- Logs

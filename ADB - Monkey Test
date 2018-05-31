@@ -1,0 +1,10 @@
+-- Monkey Test --
+
+-- Device Monkey Test
+adb -s "serial number" shell monkey "number_of_action"
+adb -s emulator-5554 shell monkey 5000
+
+-- Application Monkey Test
+adb -s "serial number" shell monkey -p "package_name.android" "number_of_action"
+adb -s emulator-5554 shell monkey -p com.google.android.youtube 5000
+--

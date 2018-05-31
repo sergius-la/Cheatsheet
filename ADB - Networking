@@ -1,0 +1,17 @@
+-- Networking --
+
+netstat -- show active interten conection
+
+-- Device IP address
+adb -s "serial number" shell ip addr
+
+
+-- Open the Port --
+5555
+5554
+adb -s "serial number" tcpip "port_number"
+
+
+-- Connecting device remote --
+adb -s "serial number" connect "IP":"port_number"
+-- Networking

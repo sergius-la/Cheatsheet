@@ -1,0 +1,19 @@
+-- Devices --
+
+-- View all devices
+
+-s Use for serial number
+-d Use for real device
+-e Use for emulators
+
+adb devices
+
+-- Close Emulator --
+adb -s "emulator-5554" emu kill
+--
+
+
+-- Reboot Device --
+adb reboot
+--
+-- Devices
