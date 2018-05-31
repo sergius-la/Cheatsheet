@@ -19,6 +19,6 @@ grep -v "pattern" "file_name" -- Search pattern lines that do not match the patt
 
 -- Command Combinatiom
 grep -i -v error catalina.out.txt | wc -l
- 1003906 -- -v find all now matches to text
+ 
 
--- RegExp 
+-- RegExp
