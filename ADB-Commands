@@ -1,4 +1,16 @@
-ADB - Commands
+Android Debug Bridge (adb)
+Android Developers -- https://developer.android.com/studio/command-line/adb.html
+
+uiautomatorviewer - Android Automation Viewer
+monitor - Android Monitor
+
+
+Shell -- Open Shell on the device
+
+adb -s __serial number__ shell
+adb shell
+--
+
 
 Push -- Copy file to Device/Emulator
 
