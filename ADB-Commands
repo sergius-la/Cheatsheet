@@ -12,6 +12,3 @@ Pull -- Copy File from Device/Emulator
 adb -s __serial number__ pull /__device_directory__/__file_name__ /__directory_name__
 adb -s emulator-5554 pull /sdcard/1234.txt .
 --
-
-
-Test
