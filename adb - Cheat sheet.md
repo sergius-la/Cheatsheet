@@ -7,10 +7,10 @@
 | uiautomatorviewer | Automation viewer |
 | monitor | Android Monitor |
 
+> List of connected devices
 ```
 adb devices 
 ```
-> List of connected devices
 
 | Command | Description |
 | ------ | ------ |
