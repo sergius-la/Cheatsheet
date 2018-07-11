@@ -1,2 +1,0 @@
--- Current resolution --
-adb shell dumpsys display | grep density
