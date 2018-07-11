@@ -30,11 +30,11 @@ adb reboot
 ```
 
 > Key Event
-> [List of events](https://github.com/sergius-la/ADB/blob/master/ADB%20-%20KeyEvent)
 ```sh
 adb shell input keyevent "event number"
 adb -s emulator5554 shell input keyevent 7
 ```
+[List of events](https://github.com/sergius-la/ADB/blob/master/ADB%20-%20KeyEvent)
 
 ### Device information
 | Command | Description |
