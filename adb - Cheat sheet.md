@@ -5,7 +5,8 @@
 Debugging tools
 | Command | Tool |
 | ------ | ------ |
-| uiautomatorviewer | Automation viewer |
+| uiautomatorviewer | 
+| Automation viewer |
 | monitor | Android Monitor |
 
 > List of connected devices
