@@ -5,8 +5,7 @@
 Debugging tools
 | Command | Tool |
 | ------ | ------ |
-| uiautomatorviewer | 
-| Automation viewer |
+| uiautomatorviewer | Automation viewer |
 | monitor | Android Monitor |
 
 > List of connected devices
@@ -173,3 +172,9 @@ The port should be opend.
 ```sh
 adb connect "IP":"port_number"
 ```
+
+
+
+
+
+
