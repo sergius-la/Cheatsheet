@@ -2,7 +2,8 @@
 
 [Android Developer](https://developer.android.com/studio/command-line/adb) - Android debug bridge documentation  
 
-| Command | Debugging tool |
+Debugging tools
+| Command | Tool |
 | ------ | ------ |
 | uiautomatorviewer | Automation viewer |
 | monitor | Android Monitor |
@@ -149,7 +150,7 @@ adb -s emulator-5554 shell monkey 5000
 
 > Application Monkey Test
 ```sh
-adb -s "serial number" shell monkey -p "package_name.android" "number_of_action"
+adb shell monkey -p "package_name.android" "number_of_action"
 adb -s emulator-5554 shell monkey -p com.google.android.youtube 5000
 ```
 
@@ -167,7 +168,7 @@ adb tcpip "port_number"
 ```
 
 > Connecting device remote 
-The port should be opend. 
+The port should be open. 
 ```sh
 adb connect "IP":"port_number"
 ```
