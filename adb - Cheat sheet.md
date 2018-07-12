@@ -2,8 +2,8 @@
 
 [Android Developer](https://developer.android.com/studio/command-line/adb) - Android debug bridge documentation  
 
-Debugging tools
-| Command | Tool |
+
+| Command | Debugging tool |
 | ------ | ------ |
 | uiautomatorviewer | Automation viewer |
 | monitor | Android Monitor |
