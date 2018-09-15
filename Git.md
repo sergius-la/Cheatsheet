@@ -1,57 +1,61 @@
-//Create a dranch and switch to It
-git checkout -b __new branch name__
-git checkout -b fix20
+
+ Create a dranch and switch to It
+> git checkout -b __new branch name__
+> git checkout -b fix20
 
 
-//See All branches
-git branch
+See All branches
+> git branch
 
 
-//See All merged branches
-got branch --merged
+ See All merged branches
+>got branch --merged
 
 
-//See unmerged branches
-git branch --no-merged
+See unmerged branches
+> git branch --no-merged
 
 
-//Last Commit
-git branch -v
+Last Commit
+> git branch -v
 
 
-//Delete Branch
-git branch -d __branch name__
-git branch -d fix20
+Delete Branch
+> git branch -d __branch name__
+> git branch -d fix20
 
-//Delete Unmerge Branche
+> Delete Unmerge Branche
 git branch -D __branch name__
 
 ***
+
+```
 Deleting the .git folder may cause problems in your git repository. If you want to delete all your commit history but keep the code in its current state, it is very safe to do it as in the following:
+
 
 Checkout
 
-git checkout --orphan latest_branch
+> git checkout --orphan latest_branch
 Add all the files
 
-git add -A
+> git add -A
 Commit the changes
 
-git commit -am "commit message"
+> git commit -am "commit message"
 Delete the branch
 
-git branch -D master
+> git branch -D master
 Rename the current branch to master
 
-git branch -m master
+> git branch -m master
 Finally, force update your repository
 
-git push -f origin master
+> git push -f origin master
 PS: this will not keep your old commit history around
 
 ***
 
-//Save changes on local computer after pull
+> Save changes on local computer after pull
 git stash
 git pull
 git stash pop
@@ -59,7 +63,7 @@ git stash pop
 
 ***
 
-git add -A stages all changes
+> git add -A stages all changes
 git add . stages new files and modifications, without deletions
 git add -u stages modifications and deletions, without new files
 
