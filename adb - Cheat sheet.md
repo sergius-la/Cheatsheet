@@ -13,11 +13,11 @@
 adb devices 
 ```
 
-| Command | Description |
-| ------ | ------ |
-| adb -d | Work with a real device |
-| adb -e | Work with an emulator |
-| adb -s | Work with a particular device by serial number |
+| Command | Key | Description |
+| --- |  --- | --- |
+| adb | -d | Work with a real device |
+| adb | -e | Work with an emulator |
+| adb | -s | Work with a particular device by serial number |
 
 > Close Emulator
 ```

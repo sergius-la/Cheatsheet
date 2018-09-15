@@ -2,7 +2,6 @@
 -- Input Text --
 adb shell input text __input_text__
 
-
 -- Button --
 
 adb shell input keyevent __number__
