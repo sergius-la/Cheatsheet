@@ -8,6 +8,8 @@ adb shell input keyevent __number__
 
 Android: Soft KeyBoard
 
+***
+
 0 -->  "KEYCODE_UNKNOWN"
 1 -->  "KEYCODE_MENU"
 2 -->  "KEYCODE_SOFT_RIGHT"

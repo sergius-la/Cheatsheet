@@ -2,6 +2,7 @@
 
 [Android Developer](https://developer.android.com/studio/command-line/adb) - Android debug bridge documentation  
 
+***
 
 | Command | Debugging tool |
 | ------ | ------ |
