@@ -1,3 +1,21 @@
+<!-- ```sh
+> description
+command
+``` -->
+
+```sh
+> Create a new Git repository
+git init
+```
+
+```sh
+> Copy of the target repository
+git clone 'Repository URL'
+```
+
+***
+
+### Branches
 
  Create a dranch and switch to It
 > git checkout -b __new branch name__
