@@ -24,6 +24,7 @@ adb devices
 ```
 adb emu kill 
 ```
+***
 
 ### Device manipulation
 > Reboot device
@@ -37,6 +38,7 @@ adb reboot
 adb shell input keyevent "event number"
 adb -s emulator5554 shell input keyevent 7
 ```
+***
 
 ### Device information
 | Command | Description |
@@ -68,6 +70,8 @@ adb shell dumpsys display | grep density
 adb shell dumpsys bluetooth_manager
 ```
 
+***
+
 ### Get Logs from a Device
 
 > Run the log from a device
@@ -88,6 +92,8 @@ adb logcat -c
 | adb logcat *:V | Verbose logs only |
 | adb logcat *:D | Debugging logs only |
 | adb logcat *:W | Warning logs only |
+
+***
 
 ### Application manipulation
 > Launch Application
@@ -141,6 +147,8 @@ adb uninstall "package_name.android"
 adb uninstall -k "package_name.android"
 ```
 
+***
+
 ### Monkey Test
 
 > Device Monkey Test
@@ -154,6 +162,8 @@ adb -s emulator-5554 shell monkey 5000
 adb shell monkey -p "package_name.android" "number_of_action"
 adb -s emulator-5554 shell monkey -p com.google.android.youtube 5000
 ```
+
+***
 
 ### Networking
 
