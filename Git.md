@@ -3,6 +3,9 @@
 command
 ``` -->
 
+> Resources:
+ [RU] http://dev-labinfo/2013/08/шпаргалка-по-git-основные-команды-слиян/
+
 ```sh
 > Create a new Git repository
 git init
@@ -15,35 +18,47 @@ git clone 'Repository URL'
 
 ***
 
+### Add / Remove Files
+
+```sh
+> Add Files
+git add "file"
+```
+
+```sh
+> Remove Files
+git rm "file"
+```
+
+***
+
 ### Branches
 
- Create a dranch and switch to It
-> git checkout -b __new branch name__
-> git checkout -b fix20
+```sh
+> Create a dranch and switch to It
+git checkout -b "new branch name"
+git checkout -b fix20
+```
 
+```sh
+> See All branches
+git branch
 
-See All branches
-> git branch
+> See All merged branches
+got branch --merged
 
+> See unmerged branches
+git branch --no-merged
 
- See All merged branches
->got branch --merged
+> Last Commit
+git branch -v
 
-
-See unmerged branches
-> git branch --no-merged
-
-
-Last Commit
-> git branch -v
-
-
-Delete Branch
-> git branch -d __branch name__
-> git branch -d fix20
+> Delete Branch
+git branch -d "branch name"
 
 > Delete Unmerge Branche
-git branch -D __branch name__
+git branch -D "branch name"
+```
 
 ***
 
