@@ -23,11 +23,25 @@ git clone 'Repository URL'
 ```sh
 > Add Files
 git add "file"
+
+> Stages all changes
+git add -A 
+
+> Stages new files and modifications, without deletions
+git add . 
+
+> Stages modifications and deletions, without new files
+git add -u 
 ```
 
 ```sh
 > Remove Files
 git rm "file"
+```
+
+```sh
+> 
+git commit -- amend
 ```
 
 ***
@@ -92,12 +106,3 @@ PS: this will not keep your old commit history around
 git stash
 git pull
 git stash pop
-
-
-***
-
-> git add -A stages all changes
-git add . stages new files and modifications, without deletions
-git add -u stages modifications and deletions, without new files
-
-***

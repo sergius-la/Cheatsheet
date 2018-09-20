@@ -3,6 +3,9 @@
 command
 ``` -->
 
+> Resources:
+ [EN] https://spin.atomicobject.com/2016/04/19/vim-commands-cheat-sheet/
+
 ```sh
 > Esc key to enter "Normal mode"
 > Then you can type : to enter "Command-line mode".
