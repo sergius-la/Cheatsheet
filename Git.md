@@ -5,6 +5,7 @@ command
 
 > Resources:
  [RU] http://dev-labinfo/2013/08/шпаргалка-по-git-основные-команды-слиян/
+ [RU] https://ru.hexlet.io/blog/posts/how-to-use-github-badges
 
 ```sh
 > Create a new Git repository
@@ -18,7 +19,7 @@ git clone 'Repository URL'
 
 ***
 
-### Add / Remove Files
+##### Add Files
 
 ```sh
 > Add Files
@@ -34,9 +35,18 @@ git add .
 git add -u 
 ```
 
+##### Remove Files
+
 ```sh
 > Remove Files
 git rm "file"
+```
+
+##### Commit
+
+```shs
+> 
+git commit -m "comment"
 ```
 
 ```sh
@@ -99,10 +109,11 @@ Finally, force update your repository
 
 > git push -f origin master
 PS: this will not keep your old commit history around
+```
 
-***
-
-> Save changes on local computer after pull
+```
+Save changes on local after pull
 git stash
 git pull
 git stash pop
+```

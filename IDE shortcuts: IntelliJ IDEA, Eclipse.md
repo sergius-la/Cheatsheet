@@ -19,4 +19,6 @@
 | Minimize | | <kbd>⌘ Command</kbd> + <kbd>M | 
 |Open / Close Project | | <kbd>⌘ Command</kbd> + <kbd>1  |
 
+Enable assert (IDEA): Run -> Edit Confirurations -> VM Points: -ea
+
 <!-- TODO: Win Shortcuts -->
