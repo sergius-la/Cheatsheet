@@ -3,6 +3,8 @@
 command
 ``` -->
 
+# Git
+
 > Resources:
  [RU] http://dev-labinfo/2013/08/шпаргалка-по-git-основные-команды-слиян/
  [RU] https://ru.hexlet.io/blog/posts/how-to-use-github-badges
@@ -44,14 +46,11 @@ git rm "file"
 
 ##### Commit
 
-```shs
-> 
+```bash
+> TODO: Add Description
 git commit -m "comment"
-```
-
-```sh
-> 
 git commit -- amend
+git log -1
 ```
 
 ***
@@ -116,4 +115,10 @@ Save changes on local after pull
 git stash
 git pull
 git stash pop
+
+Какая команда git показывает изменения, сделанные в конкретном коммите?
+
+
+git show
 ```
+

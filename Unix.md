@@ -3,13 +3,15 @@
 command
 ``` -->
 
+https://explainshell.com
+
  MacOS Shortcuts  | Terminal | 
 |--- | --- | 
 | New Window | <kbd>⌘ Command</kbd> + <kbd>N</kbd> |  
-| Generate | <kbd>⌘ Command</kbd> + <kbd>T |  
+| New Tab | <kbd>⌘ Command</kbd> + <kbd>T |  
 
 clear
-history
+
 
 ***
 
@@ -17,7 +19,7 @@ history
 > Remove (delete)
 rm 'file name'
 
-> Remove everything with extension
+> Delete everything with extension
 rm 'directory name'/**/*.'extension'
 rm src/**/*.class
 ```
@@ -55,6 +57,8 @@ cat 'file name' | less
 
 > Open couple files
 cat 'file name' 'file name 2' ...
+
+tail -f path/to/file не просто выводит последние строчки файла, но ждёт появления новых.
 ```
 
 ***
@@ -98,7 +102,7 @@ man "command_name" -- Command Description
 
 
 -- Browse Directory -- 
-
+list directory contents
 ls
 
 ls * -- Обзор всего 
@@ -107,6 +111,8 @@ ls -a -- See invisible files
  
 ls -l -- See files in a long format
 
+ls -S -- Sort by size
+ls -s -- Size
 
 -- Combination of command
 ls -al
@@ -154,6 +160,10 @@ cd - -- How to navigate to back directory
 
 mkdir "name_directory" -- Creating a New Directory
 
+В такой ситуации придётся либо создавать каждую директорию отдельно, либо воспользоваться флагом -p, который создаёт директории рекурсивно.
+
+mkdir -p one/two/three
+__
 mv "name_directory" "new_name_director" -- Rename Directory
 
 rm -d "name_directory" -- Delete an empty Directory
@@ -205,7 +215,9 @@ mv /Users/sergey/Desktop/text.txt .
 -- Работа с файлами
 
 
- 
+ -- Pipe Line
+ $ cat .bashrc | grep alias | grep color
+ ___
  
 
 -- Networking --
@@ -320,3 +332,38 @@ chown :"new_group" "file_name" -- To change groups
 -- Permission
 
 top
+date
+
+How to set a variable to the output of a command in Bash?
+OUTPUT="$(ls -1)"
+echo "${OUTPUT}"
+
+__
+Посмотреть установленные переменные можно командой env
+__
+
+
+less открывает файл и остаётся в этом режиме. Он позволяет перемещаться по файлу вперёд и назад, производить поиск. Одна из отличительных особенностей пейджеров состоит в том, что они одинаково хорошо и быстро работают с файлами любых размеров. Всё потому, что пейджер не пытается загрузить в память весь файл до его отображения. Он грузит только ту часть, которая помещается на экран и при перемещении подгружает остальное.
+
+less предоставляет несколько десятков команд для перемещения по тексту и его поиску, про большинство из них можно прочитать в соответствующем мануале. Здесь же затронем основные:
+
+q — выход
+f — вперёд на страницу
+b — назад на страницу
+если набрать /, затем начать вводить буквы и нажать Enter, то выполнится поиск введённого текста. Перемещение по найденным совпадениям выполняется командой n (переход к следующему совпадению) и командой N (переход к предыдущему совпадению).
+
+
+
+
+__
+history
+.bash_history
+За то, какое количество команд хранится в истории, отвечает переменная окружения HISTFILESIZE.
+__
+
+
+Взаимодействие с операционной системой всегда ведётся от какого-то конкретного пользователя, созданного в системе. Команда whoami позволяет выяснить, кто же я такой
+
+__
+
+Посмотреть свой идентификатор можно разными способами. первый — команда id
