@@ -8,6 +8,8 @@ command
 > Resources:
  [RU] http://dev-labinfo/2013/08/шпаргалка-по-git-основные-команды-слиян/
  [RU] https://ru.hexlet.io/blog/posts/how-to-use-github-badges
+ [EN] [RU] https://git-scm.com/book/ru/v2
+ [EN] https://learngitbranching.js.org/
 
 ```sh
 > Create a new Git repository
@@ -118,7 +120,25 @@ git stash pop
 
 Какая команда git показывает изменения, сделанные в конкретном коммите?
 
-
 git show
-```
 
+ git add -i, во время которого git показывает фрагменты измененного кода и спрашивает
+
+git reset path/to/file переводит файл из состояния staged в modified
+git checkout path/to/file переводит файл из состояния modified в unmodified, то есть по сути эта команда сбрасывает изменения.
+```
+Rename branch
+If you want to rename a branch while pointed to any branch, do:
+git branch -m <oldname> <newname>
+If you want to rename the current branch, you can do:
+git branch -m <newname>
+A way to remember this, is -m is for "move" (or mv), which is how you rename files
+ 
+ 
+ 
+// Make from two commmit one
+If there are multiple commits, you can use git rebase -i to squash two commits into one.
+If there are only two commits you want to merge, and they are the "most recent two", the following commands can be used to combine the two commits into one:
+ 
+git reset --soft "HEAD^"
+git commit --amend
