@@ -6,10 +6,10 @@ command
 # Git
 
 > Resources:
- [RU] http://dev-labinfo/2013/08/шпаргалка-по-git-основные-команды-слиян/
- [RU] https://ru.hexlet.io/blog/posts/how-to-use-github-badges
- [EN] [RU] https://git-scm.com/book/ru/v2
- [EN] https://learngitbranching.js.org/
+ * [RU] http://dev-labinfo/2013/08/шпаргалка-по-git-основные-команды-слиян/
+ * [RU] https://ru.hexlet.io/blog/posts/how-to-use-github-badges
+ * [EN] [RU] https://git-scm.com/book/ru/v2
+ * [EN] https://learngitbranching.js.org/
 
 ```sh
 > Create a new Git repository
