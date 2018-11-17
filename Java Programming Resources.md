@@ -1,4 +1,4 @@
-#Java Courses
+
 | Language | Name | Author | Link |
 | --- |  --- | --- | --- |
 | [EN] | Complete Java Masterclass | Tim Buchalka | https://www.udemy.com/java-the-complete-java-developer-course/ | 
