@@ -4,7 +4,7 @@
 ### Java
 #### [Java](https://github.com/sergius-la/Cheatsheet/blob/master/Java.md)
 #### [Java - Data conversion](https://github.com/sergius-la/Cheatsheet/blob/master/Java%20-%20Data%20conversion.md)         
-#### [Java Programming Resources](https://github.com/sergius-la/Cheatsheet/blob/master/Java%20Programming%20Resources.md)               
+#### [Java Courses](https://github.com/sergius-la/Cheatsheet/blob/master/Java%20Programming%20Resources.md)               
 ---
 ### Unix / Linux
 #### [Unix/Linux command](https://github.com/sergius-la/Cheatsheet/blob/master/Unix.md)
