@@ -19,6 +19,8 @@
 | Minimize | | <kbd>⌘ Command</kbd> + <kbd>M | 
 |Open / Close Project | | <kbd>⌘ Command</kbd> + <kbd>1  |
 | Create an Unit Test |  | <kbd>⌘ Command</kbd> + <kbd>Shift</kbd> + <kbd>T |
+| Delete Line |  | <kbd>⌘ Command</kbd> + <kbd>⌫ Backspace</kbd> |
+| Pregerence |  | <kbd>⌘ Command</kbd> + <kbd>,</kbd> |
 
 
 <!-- TODO: Win Shortcuts -->

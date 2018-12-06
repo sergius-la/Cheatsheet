@@ -142,3 +142,6 @@ If there are only two commits you want to merge, and they are the "most recent t
  
 git reset --soft "HEAD^"
 git commit --amend
+
+Git Autocomplete for Mac Terminal
+https://apple.stackexchange.com/questions/55875/git-auto-complete-for-branches-at-the-command-line
