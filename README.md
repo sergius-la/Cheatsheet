@@ -14,4 +14,4 @@
 #### [adb](https://github.com/sergius-la/Cheatsheet/blob/master/adb.md)
 #### [adb - KeyEvent](https://github.com/sergius-la/Cheatsheet/blob/master/adb%20-%20KeyEvent.md)
 ---
-#### [Study Resources](https://github.com/sergius-la/Cheatsheet/blob/master/Java%20Programming%20Resources.md)
+#### [Study Resources](https://github.com/sergius-la/Cheatsheet/blob/master/Study_Resources.md)
