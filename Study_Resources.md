@@ -36,7 +36,7 @@
 
 | Language | Name | Author | Link |
 | --- |  --- | --- | --- |
-| [EN] | Instagram Bot | Andrey Rublyov | https://youtu.be/BGU2X5lrz9M https://youtu.be/OMfNn1Gfd10 https://youtu.be/Abow8NFd4UE |
+| [EN] | Instagram Bot | Andrey Rublyov | https://youtu.be/BGU2X5lrz9M <br /> https://youtu.be/OMfNn1Gfd10 <br /> https://youtu.be/Abow8NFd4UE |
 
 ## Cybersecurity / Hacking
 
