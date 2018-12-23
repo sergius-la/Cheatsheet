@@ -43,6 +43,8 @@
 | Language | Name | Author | Link |
 | --- |  --- | --- | --- |
 | [RU] | Ethical Hacking | Over | https://youtu.be/o5r-4DaX9lI |
+| [RU] | Метаданные: Невидимая информация о файлах | Over | https://youtu.be/LOaNcz-ccNQ |
+| [RU] | Метаданные фото | kotica | https://youtu.be/95kA9ldsqtc |
 
 ## Testing
 
