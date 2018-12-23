@@ -38,6 +38,12 @@
 | --- |  --- | --- | --- |
 | [EN] | Instagram Bot | Andrey Rublyov | https://youtu.be/BGU2X5lrz9M <br /> https://youtu.be/OMfNn1Gfd10 <br /> https://youtu.be/Abow8NFd4UE |
 
+## Workshops: ML Neural Networks
+
+| Language | Name | Author | Link |
+| --- |  --- | --- | --- |
+| [RU] | Машинное обучение. Создание нейронной сети. | Windertor | https://youtu.be/CtlHxItrvbk |
+
 ## Cybersecurity / Hacking
 
 | Language | Name | Author | Link |
@@ -55,4 +61,4 @@
 | [RU] | Тестирование | Академия Яндекса | https://www.youtube.com/channel/UC9VeXtf7fcCJUfmZ_cyweXA/featured |
 | [RU] | Автоматизация тестирования REST API на Java | UNK | https://youtu.be/bZE5hU5fZCY |
 
-<!-- |  |  |  | | -->
+<!-- |  |  |  |  | -->
