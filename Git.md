@@ -5,55 +5,74 @@ command
 
 # Git
 
-> Resources:
- * [RU] http://dev-labinfo/2013/08/шпаргалка-по-git-основные-команды-слиян/
- * [RU] https://ru.hexlet.io/blog/posts/how-to-use-github-badges
- * [EN] [RU] https://git-scm.com/book/ru/v2
- * [EN] https://learngitbranching.js.org/
 
-```sh
-> Create a new Git repository
-git init
+#### Start
+
+```
+Create an empty Git repository or reinitialize an existing one
+https://git-scm.com/docs/git-init
+
+git init 
 ```
 
-```sh
-> Copy of the target repository
-git clone 'Repository URL'
+```
+Clone a repository into a new directory
+https://git-scm.com/docs/git-clone
+
+git clone "Repository URL"
 ```
 
 ***
 
-##### Add Files
+##### Adding Files
 
-```sh
-> Add Files
-git add "file"
+```
+Add file contents to the index
+https://git-scm.com/docs/git-add
 
-> Stages all changes
+git add 'file_name'
+
+Stages all changes
 git add -A 
 
-> Stages new files and modifications, without deletions
+Stages new files and modifications, without deletions
 git add . 
 
-> Stages modifications and deletions, without new files
+Stages modifications and deletions, without new files
 git add -u 
 ```
 
+***
+
 ##### Remove Files
 
-```sh
-> Remove Files
-git rm "file"
 ```
+Remove files from the working tree and from the index
+https://git-scm.com/docs/git-rm
+
+git rm 'file_name'
+```
+
+***
 
 ##### Commit
 
-```bash
-> TODO: Add Description
-git commit -m "comment"
-git commit -- amend
-git log -1
-```
+
+Record changes to the repository <br>
+https://git-scm.com/docs/git-commit <br>
+`git commit`
+
+Add all modified and deleted, use msg for commit message. <br>
+`git commit -am "msg"`
+
+Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected. <br>
+`git commit -a`
+
+Use the given "msg" as the commit message. <br>
+`git commit -m "msg"`
+
+Convenient way to modify the most recent commit. It can also be used to simply edit the previous commit message without changing its snapshot. <br>
+`git commit --amend`
 
 ***
 
@@ -92,6 +111,9 @@ Deleting the .git folder may cause problems in your git repository. If you want 
 
 
 Checkout
+
+
+git log -1
 
 > git checkout --orphan latest_branch
 Add all the files
@@ -143,5 +165,10 @@ If there are only two commits you want to merge, and they are the "most recent t
 git reset --soft "HEAD^"
 git commit --amend
 
-Git Autocomplete for Mac Terminal
-https://apple.stackexchange.com/questions/55875/git-auto-complete-for-branches-at-the-command-line
+
+#### Resources:
+- [RU] http://dev-labinfo/2013/08/шпаргалка-по-git-основные-команды-слиян/
+- [RU] https://ru.hexlet.io/blog/posts/how-to-use-github-badges
+- [EN] [RU] https://git-scm.com/book/ru/v2
+- [EN] https://learngitbranching.js.org/
+- [Autocomplete for Mac's Terminal] https://apple.stackexchange.com/questions/55875/git-auto-complete-for-branches-at-the-command-line
