@@ -2,11 +2,11 @@
 
 [Android Developer](https://developer.android.com/studio/command-line/adb) - Android debug bridge documentation  
 
-***
-
 > Debugging tools: <br>
 uiautomatorviewer -- Android Automation Viewer <br>
 monitor -- Android Monitor
+
+***
 
 List of all connected devices <br>
 `adb devices`
