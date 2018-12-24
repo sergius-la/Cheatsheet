@@ -6,7 +6,7 @@ command
 # Git
 
 
-#### Start
+#### Init
 
 ```
 Create an empty Git repository or reinitialize an existing one
@@ -15,12 +15,22 @@ https://git-scm.com/docs/git-init
 git init 
 ```
 
+***
+
 ```
 Clone a repository into a new directory
 https://git-scm.com/docs/git-clone
 
 git clone "Repository URL"
 ```
+
+****
+
+#### Status
+
+Show the working tree status <br>
+https://git-scm.com/docs/git-status <br>
+`git status`
 
 ***
 
