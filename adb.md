@@ -52,17 +52,22 @@ Swipe X1 Y1 X2 Y2. <br>
 
 ### Device information
 
+#### Dumpsys
+`dumpsys` is a tool that runs on Android devices to get diagnostic output for all system services running on a device. <br>
+https://developer.android.com/studio/command-line/dumpsys
+
 List of Services on the device <br> 
 ``` adb shell dumpsys | grep "DUMP OF SERVICE" ```
-
-List of Process on the device <br> 
-``` adb shell top ```
 
 Screen resolution <br> 
 ``` adb shell dumpsys display | grep density ```
 
-Get Information from Device <br>
-`adb shell getprop`
+#### Meminfo
+Snapshot of how your app's memory is divided between different types of RAM <br>
+`adb shell dumpsys meminfo 'com.package'`
+
+List of Process on the device <br> 
+``` adb shell top ```
 
 ***
 
@@ -77,9 +82,15 @@ Get information about conected device <br>
 ***
 
 #### Getprop
+Android System Properties and Local Preferences
+https://developer.oculus.com/documentation/mobilesdk/1.0.3/concepts/mobile-localprefs/ <br>
+`adb shell getprop`
 
 Get info about device <br>
 `getprop ro.product.model; getprop ro.product.device; getprop ro.build.version.release`
+
+Get Android device manufacturer. <br>
+`adb shell getprop ro.product.manufacturer`
 
 `adb shell getprop ro.product.model` 
 
@@ -94,6 +105,8 @@ Get info about device <br>
 ***
 
 #### Logcat
+Logcat is a command-line tool that dumps a log of system messages, including stack traces when the device throws an error and messages. <br>
+https://developer.android.com/studio/command-line/logcat
 
 Run the log from a device <br>
 ``` adb logcat ```
@@ -197,39 +210,46 @@ adb shell
 
 ***
 
--- Packages list --
+### Packages list
+
+List all packages on your device. <br>
+`pm list packages`
+
+All packages on your device with locations. <br>
+`pm list packages -f`
 
 -f full path
 -e enabled packages
 -s system packages
 -3 third party packages 
-  
-pm list packages -- list all packages on your device
-pm list packages -f -- list all packages on your device with locations
 
-adb shell pm clear <package> -- This will delete all data associated with a package.
+This will delete all data associated with a package.<br>
+`adb shell pm clear <package>`
+
+***
+
+### Package / Application Information
+
+Package Name & Activity Name from current window. <br>
+`adb shell dumpsys window windows | grep Focus`
+
+How to find name packages. <br>
+`adb shell pm list packages | grep <name>`
+
+Package version. <br>
+`adb shell dumpsys package <com.package.name> | grep version`
+
+***
 
 
-
--- Package Name & Activity Name from current window  --
-adb shell dumpsys window windows | grep Focus
-
-
--- How to find name on the Package --
-adb shell
-pm list packages | grep "name"
-
-
--- How to find version of the Package --
-adb shell dumpsys package <packageName> | grep version
-
-Push -- Copy file to Device/Emulator
+#### Push
 
 adb -s __serial number__ push /__directory_name__/__file_name__ /__device_directory__ 
 adb -s emulator-5554 push ~/Desktop/123.txt /sdcard
 
+***
 
-Pull -- Copy File from Device/Emulator
+#### Pull 
 
 adb -s __serial number__ pull /__device_directory__/__file_name__ /__directory_name__ 
 adb -s emulator-5554 pull /sdcard/1234.txt .
@@ -246,7 +266,7 @@ adb -s emulator-5554 shell screencap /sdcard/sc2.png
 adb shell  screencap /sdcard/"3.png" | adb  pull /sdcard/"3.png" /Users/sergey/Desktop 
 --
 
-
+***
 
 
 -- Make a Screenrecord --
