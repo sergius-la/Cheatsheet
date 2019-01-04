@@ -1,6 +1,7 @@
 # Android Debug Bridge (adb)
 
-[Android Developer](https://developer.android.com/studio/command-line/adb) - Android debug bridge documentation  
+[Android Developer](https://developer.android.com/studio/command-line/adb) - Android debug bridge documentation <br>
+[AdbCommands](https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8) - Adb useful commands list 
 
 > Debugging tools: <br>
 uiautomatorviewer -- Android Automation Viewer <br>
@@ -12,7 +13,7 @@ List of all connected devices <br>
 `adb devices`
 
 > Work with a particular device <br>
-`adb -s 'device'`
+`adb -s <device>`
 
 | Command | Key | Description |
 | --- |  --- | --- |
@@ -40,13 +41,13 @@ Bluetooth to disable (need permition) <br>
 [List of events](https://developer.android.com/reference/android/view/KeyEvent) - Android developer documentation 
 
 Input keyevent. <br>
-`adb shell input keyevent 'event_number'`
+`adb shell input keyevent <event_number>`
 
 Tap X,Y position. <br> 
-`adb shell input tap 'X' 'Y'`
+`adb shell input tap <X> <Y>`
 
-Swipe X1 Y1 X2 Y2. <br> 
-`adb shell input swipe 'X1' 'Y1' 'X2' 'Y2'`
+Swipe by coordinates X1 Y1 X2 Y2. <br> 
+`adb shell input swipe <X1> <Y1> <X2> <Y2>`
 
 ***
 
@@ -62,9 +63,17 @@ List of Services on the device <br>
 Screen resolution <br> 
 ``` adb shell dumpsys display | grep density ```
 
-#### Meminfo
+***
+
+#### Memory info
+Snapshot of RAM memory usage <br>
+`adb shell dumpsys meminfo`
+
+Monitor your system's virtual memory usage<br>
+`adb shell vmstat`
+
 Snapshot of how your app's memory is divided between different types of RAM <br>
-`adb shell dumpsys meminfo 'com.package'`
+`adb shell dumpsys meminfo <com.package>`
 
 List of Process on the device <br> 
 ``` adb shell top ```
@@ -137,14 +146,23 @@ TODO
 
 ### Application manipulation
 
-Launch Application <br>
-`adb shell am start -c api.android.intent.LAUNCHER -a api.android.category.MAIN -n 'package_name'/'activity_name'`
+#### am (Activity manager)
+
+Start Application <br>
+`adb shell am start <package.name>/<activity_name>`
+
+Start Application without activity name <br>
+`PKG=<package.name>` <br>
+`adb shell am start $PKG/$(adb shell cmd package resolve-activity -c android.intent.category.LAUNCHER $PKG | sed -n '/name=/s/^.*name=//p')`
+
+Start Service <br>
+`adb shell am startservice <service.name>`
 
 Close Application <br>
-``` adb shell am force-stop "package_name" ```
+``` adb shell am force-stop <service.name> ```
 
 Clear Application cache <br>
-``` adb shell pm clear "package_name" ```
+``` adb shell pm clear <service.name> ```
 
 ***
 
@@ -244,48 +262,48 @@ Package version. <br>
 
 #### Push
 
-adb -s __serial number__ push /__directory_name__/__file_name__ /__device_directory__ 
-adb -s emulator-5554 push ~/Desktop/123.txt /sdcard
+`adb push <path>/<filename> /<path_destination>` <br> 
+`adb push ~/Desktop/123.txt /sdcard`
 
 ***
 
 #### Pull 
 
-adb -s __serial number__ pull /__device_directory__/__file_name__ /__directory_name__ 
-adb -s emulator-5554 pull /sdcard/1234.txt .
+`adb -s __serial number__ pull /__device_directory__/__file_name__ /__directory_name__` <br> 
+`adb -s emulator-5554 pull /sdcard/1234.txt .`
 
 ***
 
--- Make a Screenshot --
-adb -s "serial number" shell screencap /"device_directory"/"file_name"
-adb -s emulator-5554 shell screencap /sdcard/sc2.png
---
+#### Make a Screenshot
+`adb -s "serial number" shell screencap /"device_directory"/"file_name"` <br>
+`adb -s emulator-5554 shell screencap /sdcard/sc2.png`
 
+***
 
--- Screenshot & Copy to Desktop -- 
-adb shell  screencap /sdcard/"3.png" | adb  pull /sdcard/"3.png" /Users/sergey/Desktop 
---
+#### Screenshot & Copy to Desktop
+`adb shell  screencap /sdcard/"3.png" | adb  pull /sdcard/"3.png" /Users/sergey/Desktop`
 
 ***
 
 
--- Make a Screenrecord --
+#### Make a Screenrecord
 -bit
---
+
+***
 
 
-adb -s "serial number" shell screenrecord --time-limit "seconds" /"device_directory"/"file_name.mp4"
-adb shell screenrecord --time-limit 15 /sdcard/1.mp4
-adb -s emulator-5554 shell screenrecord --time-limit 15 /sdcard/happy.mp4
+`adb -s "serial number" shell screenrecord --time-limit "seconds" /"device_directory"/"file_name.mp4"` <br>
+`adb shell screenrecord --time-limit 15 /sdcard/1.mp4` <br>
+`adb -s emulator-5554 shell screenrecord --time-limit 15 /sdcard/happy.mp4`
 
+***
 
--- Screenrecord & Copy to Desktop --
-adb shell screenrecord --time-limit 60 /sdcard/1.mp4
-adb  pull /sdcard/1.mp4 /Users/sergey/Desktop
+#### Screenrecord & Copy to Desktop
+`adb shell screenrecord --time-limit 60 /sdcard/1.mp4` <br>
+`adb  pull /sdcard/1.mp4 /Users/sergey/Desktop`
 
-adb shell screenrecord --time-limit "60" /sdcard/"1.mp4"
-adb  pull /sdcard/"1.mp4" /Users/sergey/Desktop
---
+`adb shell screenrecord --time-limit "60" /sdcard/"1.mp4"` <br>
+`adb  pull /sdcard/"1.mp4" /Users/sergey/Desktop`
 
 ***
 
