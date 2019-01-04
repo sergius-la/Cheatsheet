@@ -12,7 +12,7 @@ Clone a repository into a new directory. <br>
 https://git-scm.com/docs/git-clone <br>
 `git clone 'Repository URL'`
 
-****
+***
 
 #### Status
 
@@ -84,7 +84,7 @@ https://git-scm.com/docs/git-branch <br>
 Local branches in your repository <br>
 `git branch`
 
-Remote branches im repository <br>
+Remote branches in repository <br>
 `git branch -a`
 
 Delete Branch. <br>
