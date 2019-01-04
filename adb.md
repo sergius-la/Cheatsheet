@@ -96,9 +96,6 @@ Android System Properties and Local Preferences
 https://developer.oculus.com/documentation/mobilesdk/1.0.3/concepts/mobile-localprefs/ <br>
 `adb shell getprop`
 
-Get info about device <br>
-`getprop ro.product.model; getprop ro.product.device; getprop ro.build.version.release`
-
 Get Android device manufacturer. <br>
 `adb shell getprop ro.product.manufacturer`
 
