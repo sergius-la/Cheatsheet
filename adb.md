@@ -30,7 +30,7 @@ Reboot the device. <br>
 `adb reboot`
 
 Reboots into bootloade. <br>
-`adb reboot bootloader` 
+`adb reboot bootloader`
 
 Bluetooth to disable (need permition) <br> 
 `adb shell service call bluetooth_manager 8`
@@ -41,7 +41,8 @@ Bluetooth to disable (need permition) <br>
 [List of events](https://developer.android.com/reference/android/view/KeyEvent) - Android developer documentation 
 
 Input keyevent. <br>
-`adb shell input keyevent <event_number>`
+`adb shell input keyevent <event_number>` <br>
+`adb shell "input keyevent --longpress 26 && input keyevent --longpress 24"`
 
 Tap X,Y position. <br> 
 `adb shell input tap <X> <Y>`
@@ -129,8 +130,7 @@ Dump logs from buffer <br>
 > Dump log into file <br>
 `adb logcat -d >'file_name'.txt`
 
-Log for package <br>
-TODO
+[//]: #TODO: (Log for package)
 
 
 | Command | Description |
@@ -146,7 +146,8 @@ TODO
 
 ### Application manipulation
 
-#### am (Activity manager)
+#### am (activity manager)
+[activity manager](https://gist.github.com/tsohr/5711945) - Android activity manager "am" command help 
 
 Start Application <br>
 `adb shell am start <package.name>/<activity_name>`
@@ -161,6 +162,10 @@ Start Service <br>
 Close Application <br>
 ``` adb shell am force-stop <service.name> ```
 
+Open Market for Particulaar Application <br>
+`adb shell am start -a android.intent.action.VIEW -d 'market://details?id=<package.name>'`
+
+#### pm (package manager)
 Clear Application cache <br>
 ``` adb shell pm clear <service.name> ```
 
@@ -249,7 +254,7 @@ This will delete all data associated with a package.<br>
 ### Package / Application Information
 
 Package Name & Activity Name from current window. <br>
-`adb shell dumpsys window windows | grep Focus`
+`adb shell dumpsys window windows | grep -E 'mCurrentFocus'`
 
 How to find name packages. <br>
 `adb shell pm list packages | grep <name>`
@@ -275,14 +280,18 @@ Package version. <br>
 ***
 
 #### Make a Screenshot
+
 `adb -s "serial number" shell screencap /"device_directory"/"file_name"` <br>
 `adb -s emulator-5554 shell screencap /sdcard/sc2.png`
+
 
 ***
 
 #### Screenshot & Copy to Desktop
 `adb shell  screencap /sdcard/"3.png" | adb  pull /sdcard/"3.png" /Users/sergey/Desktop`
 
+`adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > screen.png` <br>
+https://blog.shvetsov.com/2013/02/grab-android-screenshot-to-computer-via.html <br>
 ***
 
 
