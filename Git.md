@@ -79,7 +79,13 @@ Convenient way to modify the most recent commit. It can also be used to simply e
 
 List, create, or delete branches. <br>
 https://git-scm.com/docs/git-branch <br>
+`branch`
+
+Local branches in your repository <br>
 `git branch`
+
+Remote branches im repository <br>
+`git branch -a`
 
 Delete Branch. <br>
 `git branch -d 'branch_name'`
