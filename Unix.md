@@ -20,6 +20,9 @@
 An interface to the on-line reference manuals <br>
 `man <command>`
 
+> Show list of all commands in the shell <br>
+`ls -l /bin`
+
 Print name of current/working directory <br>
 `pwd`
 
@@ -28,6 +31,12 @@ Display processes <br>
 
 Print or set the system date and time <br>
 `date`
+
+Run a program in a modified environment <br>
+`env`
+
+Log of commands <br>
+`history`
 
 ***
 
@@ -41,15 +50,7 @@ Windows <br>
 
 ***
 
-Remove files or directories <br>
-`rm <file_name>`
-
-> Delete all files by extension <br>
-`rm <path>/**/*.<extension>` <br>
-`rm src/**/*.class`
-
-***
-
+#### mkdir
 Create a directory <br>
 `mkdir <directory_name`
 
@@ -59,6 +60,7 @@ Make multiple directories <br>
 
 ***
 
+#### find
 Search for files in a directory hierarchy <br>
 `find`
 
@@ -70,12 +72,13 @@ Find all directories <br>
 
 ***
 
+#### cat
 Concatenate files and print on the standard output <br>
 `cat <file_name>`
 
 | Key | Description |
 | --- | --- |
-| `cat -b <file_name>` | Open a file with Numbered lines | 
+| `cat -b` | Open a file with Numbered lines | 
 
 Reading large file that doesn’t fit to the screen <br>
 `cat <file_name> | less`
@@ -85,11 +88,13 @@ Redirecting the content from one file to another <br>
 
 ***
 
+#### file
 Get information about file <br>
 `file <file_name>`
 
 ***
 
+#### ls
 List directory contents <br>
 `ls`
 
@@ -112,6 +117,7 @@ Send ECHO_REQUEST packets to network hosts <br>
 
 ***
 
+#### cd
 Change the working directory <br>
 `cd <directory_name>`
 
@@ -123,45 +129,64 @@ Change the working directory <br>
 | `cd -` | Switch you to the previous directory |
 
 ***
+#### cp
+Copy files and directories <br>
+`cp <path_from/file_name> <path_to>`
+
+***
+
+#### mv
+Move (rename) files <br>
+`mv <path_from/file_name> <path_to>`
+
+Rename a file <br>
+`mv <file_name> <new_file_name>`
+
+***
+
+#### rm
+Delete files or directories <br>
+`rm <file_name>`
+
+> Delete all files by extension <br>
+`rm <path>/**/*.<extension>` <br>
+`rm src/**/*.class`
+
+| Key | Description |
+| --- | --- |
+| `rm -d` | Delete an empty Directory |
+| `rm -r` | Delete Not Empty Directory |
+
+***
+
+#### Vi text editior
+
+i - insert mode <br>
+Esc - Comand Mode <br>
+
+:q - Exit <br>
+:w - Save <br>
+
+:wq - Save and Exit <br>
+Shift ZZ - Save and Exit
+
+***
+
+#### ws
+Print newline, word, and byte counts for each file <br>
+`ws <file_name>`
+
+| Key | Description |
+| --- | --- |
+| `wc -l` | Count line in a file  |
+| `wc -c` | Count characters in a file  |
+| `wc -w` | Count words in a file  |
+
+***
 
 
 
 
-ls -l /bin -- Show all Command
-
-
-
--- General
-
-
-
-
-
-
-
-
-<!-- -- Find --
-
--i ignore case sensetive
-
--name "*" -- Search any pattern
--name "*pattern" -- Search by partially pattern name
--size +50M -- Search by file size
-
-find . -name "file_name" -- Finds all the files named in the current directory
-find / -name "file_name" -- Find all the files named anywhere on the system
-
---
-
-
-__
-mv "name_directory" "new_name_director" -- Rename Directory
-
-rm -d "name_directory" -- Delete an empty Directory
-
-rm -r "name_directory" -- Delete Not Empty Directory
-
--- Работа с директориями
 
 
 
@@ -171,13 +196,9 @@ rm -r "name_directory" -- Delete Not Empty Directory
 
 
 
--- Count in a file
-wc -l "file_name" -- Count line in a file  
-wc -c "file_name" -- Count characters in a file
-wc -w "file_name" -- Count words in a file
 
 
-sort "file_name" > "new_file_name" -- Create a new file sorted file by the First character
+<!-- sort "file_name" > "new_file_name" -- Create a new file sorted file by the First character
 
 tail -n "file_name" -- Get the last line in the file
 tail -10 "file_name" -- Get last 10 lines in the file
@@ -188,48 +209,23 @@ head -20 "file_name" -- Get first 20 lines in the file
 head -8 "file_name" | tail -7 -- Show range of lines from 2 to 8
 
 
--- cp Copy/mv Move File --
-cp "file_name" "child_directory_name"/ -- Copy File from Current Directory to the Child Directory
 
-mv "file_name" "child_directory_name"/ -- Move File from Current Directory to the Child Directory
-
--- cp Copy/mv Move a file from a directory to Another Directory
-mv "home_directory"/"directory_name"/././"file_name.extention" "home_directory"/"directory_name"/././
-mv /Users/sergey/Desktop/text.txt /Users/sergey/Desktop/SWIFT/Array
---
-
--- cp Copy/mv Move a file from a directory to Current directory
-mv "home_directory"/"directory_name"/././"file_name.extention" .
-mv /Users/sergey/Desktop/text.txt .
---
-
--- Работа с файлами
 
 
  -- Pipe Line
  $ cat .bashrc | grep alias | grep color
  ___
 
--- Vi Text Editior --
 
-i - insert mode
-Esc - Comand Mode
-
-:q - Exit
-:w - Save
-
-:wq - Save and Exit
-Shift ZZ - Save and Exit
--- Vi
 
 
 -- Create/Rename/Edit/Delete File --
 
 touch "file_name" -- Create a File
 
-rm "file_name" -- Delete a File
 
-mv "file_name" "new_file_name" - Rename a file
+
+
 
 
 -- Regular Expressions --
@@ -258,9 +254,6 @@ grep -i "pattern" "file_name" -- Search pattern ignore case sensetive
 grep -v "pattern" "file_name" -- Search pattern lines that do not match the pattern
 
 
--- Command Combinatiom
-grep -i -v error catalina.out.txt | wc -l
- 1003906 -- -v find all now matches to text
 
 -- RegExp 
 
@@ -314,9 +307,7 @@ How to set a variable to the output of a command in Bash?
 OUTPUT="$(ls -1)"
 echo "${OUTPUT}"
 
-__
-Посмотреть установленные переменные можно командой env
-__
+
 
 
 less открывает файл и остаётся в этом режиме. Он позволяет перемещаться по файлу вперёд и назад, производить поиск. Одна из отличительных особенностей пейджеров состоит в том, что они одинаково хорошо и быстро работают с файлами любых размеров. Всё потому, что пейджер не пытается загрузить в память весь файл до его отображения. Он грузит только ту часть, которая помещается на экран и при перемещении подгружает остальное.
@@ -331,11 +322,6 @@ b — назад на страницу
 
 
 
-__
-history
-.bash_history
-За то, какое количество команд хранится в истории, отвечает переменная окружения HISTFILESIZE.
-__
 
 
 Взаимодействие с операционной системой всегда ведётся от какого-то конкретного пользователя, созданного в системе. Команда whoami позволяет выяснить, кто же я такой
@@ -344,7 +330,7 @@ __
 
 tail -f path/to/file не просто выводит последние строчки файла, но ждёт появления новых.
 
-Посмотреть свой идентификатор можно разными способами. первый — команда id -->
+ -->
 
 ***
 
