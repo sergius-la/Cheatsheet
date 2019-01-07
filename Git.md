@@ -112,6 +112,19 @@ Only list unmerged branches. <br>
 
 ***
 
+#### Rebase
+Reapply commits on top of another base tip. <br>
+https://git-scm.com/docs/git-rebase <br>
+`git rebase`
+
+***
+
+#### Merge
+Join two or more development histories together. <br>
+https://git-scm.com/docs/git-merge <br>
+`git merge`
+
+
 #### Checkout
 
 Switch branches or restore working tree files. <br>
@@ -163,13 +176,6 @@ https://git-scm.com/docs/git-stash <br>
 Fetch from and integrate with another repository or a local branch. <br>
 https://git-scm.com/docs/git-pull <br>
 `git pull`
-
-***
-
-#### Rebase
-Reapply commits on top of another base tip. <br>
-https://git-scm.com/docs/git-rebase <br>
-`git rebase`
 
 ***
 
