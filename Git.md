@@ -81,6 +81,11 @@ List, create, or delete branches. <br>
 https://git-scm.com/docs/git-branch <br>
 `branch`
 
+> Create a remote branch
+https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch <br>
+git checkout -b <branch_name> <br>
+git push --set-upstream <remote_name> <local_branch_name>
+
 Local branches in your repository <br>
 `git branch`
 
