@@ -1,127 +1,146 @@
-<!-- ```sh
-> description
-command
-``` -->
+<!-- | Key | Description |
+| --- | --- |
+| `` | | -->
 
-https://explainshell.com
+# Unix commands
 
- MacOS Shortcuts  | Terminal | 
+#### Mac Terminal
+
+| Mac Shortcuts | Terminal | 
 |--- | --- | 
 | New Window | <kbd>⌘ Command</kbd> + <kbd>N</kbd> |  
-| New Tab | <kbd>⌘ Command</kbd> + <kbd>T |  
-
-clear
-
+| New Tab | <kbd>⌘ Command</kbd> + <kbd>T | 
 
 ***
 
-```sh
-> Remove (delete)
-rm 'file name'
+#### General Commands
 
-> Delete everything with extension
-rm 'directory name'/**/*.'extension'
-rm src/**/*.class
-```
-***
+> The "|" (pipe) operator sends the standard output of one command to another command as standard input. It allows commands to be combined in a sequential order
 
-```sh
-> Make directory
-mkdir 'directory name'
+An interface to the on-line reference manuals <br>
+`man <command>`
 
-> Make multiple directory
-mkdir -p com/test/{buildings,humands}
-```
-***
+Print name of current/working directory <br>
+`pwd`
 
-```sh
-> Find
+Display processes <br>
+`top`
 
-> Find All directories
-find ./'directory name'
-
-> Observe directory
-find 'directory name'
-```
+Print or set the system date and time <br>
+`date`
 
 ***
 
-```sh
-> Cat
+Clear the terminal screen
 
-> Open a file 
-cat 'file name'
+Unix-like <br>
+`clear`
 
-> Reading large file that doesn’t fit to the screen 
-cat 'file name' | less
-
-> Open couple files
-cat 'file name' 'file name 2' ...
-
-tail -f path/to/file не просто выводит последние строчки файла, но ждёт появления новых.
-```
+Windows <br>
+`cls`
 
 ***
 
+Remove files or directories <br>
+`rm <file_name>`
+
+> Delete all files by extension <br>
+`rm <path>/**/*.<extension>` <br>
+`rm src/**/*.class`
+
 ***
 
-```
--- Cat --
-cat "file_name1" "file_name2" >> "file_name" -- Create a new file with redirected text from file_name1, file_name2
+Create a directory <br>
+`mkdir <directory_name`
 
-cat <"file_name" -- Redirects input from a file
+Make multiple directories <br>
+`mkdir -p <path>/{<dir_name>,<dir_name>}` <br>
+`mkdir -p com/test/{buildings,humands}`
 
-cat -b "file_name" -- Open a file with Numbered lines
+***
 
-cat >"file_name" -- Create a File with text
-"text"
-Ctrl D
+Search for files in a directory hierarchy <br>
+`find`
 
-cat >>"file_name" -- Append text to File
-"text"
-Ctrl D
+Observe directory <br>
+`find <directory_name>`
 
-cat "file_name" > "new_file_name" -- Redirecting the content from one file to another
---
+Find all directories <br>
+`find ./<directory_name>`
 
--- General Command --
+***
 
-The "|" (pipe) operator sends the standard output of one command to another command as standard input. It allows commands to be combined in a sequential order
+Concatenate files and print on the standard output <br>
+`cat <file_name>`
+
+| Key | Description |
+| --- | --- |
+| `cat -b <file_name>` | Open a file with Numbered lines | 
+
+Reading large file that doesn’t fit to the screen <br>
+`cat <file_name> | less`
+
+Redirecting the content from one file to another <br>
+`cat <file_name> > <new_file>`
+
+***
+
+Get information about file <br>
+`file <file_name>`
+
+***
+
+List directory contents <br>
+`ls`
+
+| Key | Description |
+| --- | --- |
+| `ls -a` | Invisible files |
+| `ls -l` | Files in a long format |
+| `ls -S` | Sort by size |
+| `ls -s, --size ` | Print the allocated size of each file, in blocks |
+
+***
+
+### Networking
+
+IP Info <br>
+`ifconfig` 
+
+Send ECHO_REQUEST packets to network hosts <br>
+`ping <website/IP>`
+
+***
+
+Change the working directory <br>
+`cd <directory_name>`
+
+| Option | Description |
+| --- | --- |
+| `cd ~` | Move to Home directory |
+| `cd /` | Move to Root directory |
+| `cd ..` | Will move you up one directory |
+| `cd -` | Switch you to the previous directory |
+
+***
 
 
 
-file "file_name" - Get information about file
 
 ls -l /bin -- Show all Command
 
-man "command_name" -- Command Description
+
 
 -- General
 
 
 
 
--- Browse Directory -- 
-list directory contents
-ls
-
-ls * -- Обзор всего 
-
-ls -a -- See invisible files
- 
-ls -l -- See files in a long format
-
-ls -S -- Sort by size
-ls -s -- Size
-
--- Combination of command
-ls -al
-
--- Обзор директории
 
 
 
--- Find --
+
+<!-- -- Find --
 
 -i ignore case sensetive
 
@@ -135,34 +154,6 @@ find / -name "file_name" -- Find all the files named anywhere on the system
 --
 
 
-
-
--- Moving through Directory -- 
-
-pwd -- Show current location
-
-cd ~ -- Move to Home directory
-
-cd / -- Move to Root directory 
-
-cd "name_directory" -- Move to Directory
-
-cd .. -- Exit from Directory
-
-cd - -- How to navigate to back directory 
-
--- Передвижение по директориям
-
-
-
-
--- Create/Edit/Delete Directory --
-
-mkdir "name_directory" -- Creating a New Directory
-
-В такой ситуации придётся либо создавать каждую директорию отдельно, либо воспользоваться флагом -p, который создаёт директории рекурсивно.
-
-mkdir -p one/two/three
 __
 mv "name_directory" "new_name_director" -- Rename Directory
 
@@ -218,20 +209,6 @@ mv /Users/sergey/Desktop/text.txt .
  -- Pipe Line
  $ cat .bashrc | grep alias | grep color
  ___
- 
-
--- Networking --
-
-ifconfig -- IP Info
-
-ping "website/IP"
---
-
-
-
-
-
-
 
 -- Vi Text Editior --
 
@@ -331,8 +308,7 @@ chown :"new_group" "file_name" -- To change groups
 
 -- Permission
 
-top
-date
+
 
 How to set a variable to the output of a command in Bash?
 OUTPUT="$(ls -1)"
@@ -366,4 +342,12 @@ __
 
 __
 
-Посмотреть свой идентификатор можно разными способами. первый — команда id
+tail -f path/to/file не просто выводит последние строчки файла, но ждёт появления новых.
+
+Посмотреть свой идентификатор можно разными способами. первый — команда id -->
+
+***
+
+#### Resources:
+
+> https://explainshell.com
