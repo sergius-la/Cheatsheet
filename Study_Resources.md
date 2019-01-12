@@ -32,6 +32,12 @@
 | --- |  --- | --- | --- |
 | [EN] | Python Programming Masterclass | Tim Buchalka | https://www.udemy.com/python-the-complete-python-developer-course/ |
 
+## Python Frameworks
+
+| Language | Name | Author | Link |
+| --- |  --- | --- | --- |
+| [EN] | OpenCV with Python for Image and Video Analysis | sentdex | https://www.youtube.com/playlist?list=PLQVvvaa0QuDdttJXlLtAJxJetJcqmqlQq |
+
 ## Workshops: Python
 
 | Language | Name | Author | Link |

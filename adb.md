@@ -250,14 +250,18 @@ This will delete all data associated with a package.<br>
 
 ### Package / Application Information
 
+#### Dumpsys
+
 Package Name & Activity Name from current window. <br>
 `adb shell dumpsys window windows | grep -E 'mCurrentFocus'`
 
-How to find name packages. <br>
-`adb shell pm list packages | grep <name>`
-
 Package version. <br>
 `adb shell dumpsys package <com.package.name> | grep version`
+
+#### pm (Package Manager)
+
+How to find name packages. <br>
+`adb shell pm list packages | grep <name>`
 
 ***
 
@@ -313,3 +317,7 @@ https://blog.shvetsov.com/2013/02/grab-android-screenshot-to-computer-via.html <
 
 ***
 
+> For a list of all the available shell programs <br> 
+adb shell ls /system/bin
+
+***
