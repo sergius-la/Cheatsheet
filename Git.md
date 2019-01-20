@@ -115,6 +115,7 @@ Only list unmerged branches. <br>
 #### Rebase
 Reapply commits on top of another base tip. <br>
 https://git-scm.com/docs/git-rebase <br>
+https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase <br>
 `git rebase`
 
 ***
@@ -124,6 +125,13 @@ Join two or more development histories together. <br>
 https://git-scm.com/docs/git-merge <br>
 `git merge`
 
+> Merge two local branches <br>
+`git checkout -b hotfix` <br>
+`git commit -am "hot fix"` <br>
+`git checkout master` <br>
+`git merge hotfix`
+
+***
 
 #### Checkout
 

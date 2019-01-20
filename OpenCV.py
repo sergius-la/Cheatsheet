@@ -27,3 +27,22 @@ cv2.destroyAllWindows()
 # Image Detection
 """
 
+"""
+OpenCV:
+How to get specific frame:
+https://stackoverflow.com/questions/33523751/getting-specific-frames-from-videocapture-opencv-in-python 
+
+
+OpenCV:
+Open Image
+Crop Image
+Draw:
+Rectangle: cv2.rectangle(streaming, (0, 0), (540, 960), (0, 0, 255), 1) # RED - Frame WeChat Visible border - Correct
+Line: cv2.line(streaming, (539, 0), (539, 960), (0,0,255), 1) # RED Rigth Line
+Как найти размеры img, работает как с img так и с numpy array:
+h, w, c = ground_source_frame.shape 
+print(w)
+Вырезание img
+# frame = source_frame[TOP:BUTTOM, LEFT:RIGHT]
+ground_source_frame = frame[5:1080, 407:1173]
+"""

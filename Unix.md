@@ -13,6 +13,13 @@
 
 ***
 
+#### &&
+
+Executing multiple command use <br>
+`cd ~/Desktop && mkdir newfolder`
+
+***
+
 #### General Commands
 
 > The "|" (pipe) operator sends the standard output of one command to another command as standard input. It allows commands to be combined in a sequential order
@@ -148,14 +155,17 @@ Rename a file <br>
 Delete files or directories <br>
 `rm <file_name>`
 
-> Delete all files by extension <br>
-`rm <path>/**/*.<extension>` <br>
-`rm src/**/*.class`
+> Delete all files from a directory <br>
+`cd <path> && rm -rf *` <br>
+
+> Delete all files by format <br>
+`cd <path> && rm -rf *.<ext>` <br>
 
 | Key | Description |
 | --- | --- |
 | `rm -d` | Delete an empty Directory |
 | `rm -r` | Delete Not Empty Directory |
+| `rm -f` | Force which is helpful when you don't want to be asked/prompted |
 
 ***
 

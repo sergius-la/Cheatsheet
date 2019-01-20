@@ -68,7 +68,8 @@ Screen resolution <br>
 
 #### Memory info
 Snapshot of RAM memory usage <br>
-`adb shell dumpsys meminfo`
+`adb shell dumpsys meminfo <PID>` <br> 
+`adb shell dumpsys meminfo <package.name>`
 
 Monitor your system's virtual memory usage<br>
 `adb shell vmstat`
@@ -78,6 +79,14 @@ Snapshot of how your app's memory is divided between different types of RAM <br>
 
 List of Process on the device <br> 
 ``` adb shell top ```
+
+***
+
+#### pidof
+
+PID of the particular process <br>
+https://stackoverflow.com/questions/21319883/adb-find-pid-from-the-adb-shell <br>
+`adb shell pidof <package.name>`
 
 ***
 
