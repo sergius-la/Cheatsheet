@@ -44,6 +44,13 @@
 | --- |  --- | --- | --- |
 | [EN] | Instagram Bot | Andrey Rublyov | https://youtu.be/BGU2X5lrz9M <br /> https://youtu.be/OMfNn1Gfd10 <br /> https://youtu.be/Abow8NFd4UE |
 
+## Neural Networks / Нейронные сети
+
+| Language | Name | Author | Link |
+| --- |  --- | --- | --- |
+| [RU] | Введение в архитектуры нейронных сетей | Григорий Сапунов | https://youtu.be/XY5AczPW7V4 |
+
+
 ## Workshops: ML Neural Networks
 
 | Language | Name | Author | Link |
