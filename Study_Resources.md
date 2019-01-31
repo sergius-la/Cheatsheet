@@ -29,8 +29,9 @@
 ## Python
 
 | Language | Name | Author | Link |
-| --- |  --- | --- | --- |
+| --- |  --- | --- | --- | 
 | [EN] | Python Programming Masterclass | Tim Buchalka | https://www.udemy.com/python-the-complete-python-developer-course/ |
+| [RU] | Декораторы | Олег Молчанов | https://www.youtube.com/watch?v=Ss1M32pp5Ew |
 
 ## Python Frameworks
 
