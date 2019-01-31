@@ -1,8 +1,7 @@
 from datetime import datetime
 
 """
-Декорыторы:
-https://www.youtube.com/watch?v=Ss1M32pp5Ew
+[RU] Декорыторы - https://www.youtube.com/watch?v=Ss1M32pp5Ew
 """
 
 def timeit(func):
