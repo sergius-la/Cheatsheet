@@ -66,19 +66,37 @@ Screen resolution <br>
 
 ***
 
-#### Memory info
+### Memory Usage
+
+#### dumpsys meminfo
 Snapshot of RAM memory usage <br>
-`adb shell dumpsys meminfo <PID>` <br> 
 `adb shell dumpsys meminfo <package.name>`
 
+Snapshot of how your app's memory is divided between different types of RAM <br>
+`adb shell dumpsys meminfo <com.package>` <br> 
+`adb shell dumpsys meminfo <PID>`
+
+#### procstats
+To see how your app is behaving over time—including how long it runs in the background and how much memory it uses during that time<br>
+`adb shell dumpsys procstats --hours 3`
+
+#### vmstat
 Monitor your system's virtual memory usage<br>
 `adb shell vmstat`
 
-Snapshot of how your app's memory is divided between different types of RAM <br>
-`adb shell dumpsys meminfo <com.package>`
+***
 
-List of Process on the device <br> 
-``` adb shell top ```
+#### dumpsys input
+Dumps the state of the system’s input devices, such as keyboards and touchscreens, and the processing of input events<br>
+
+`adb shell dumpsys netstats detail`
+
+***
+
+#### dumpsys netstats
+Inspect network diagnostics<br>
+
+`adb shell dumpsys input`
 
 ***
 
@@ -87,6 +105,12 @@ List of Process on the device <br>
 PID of the particular process <br>
 https://stackoverflow.com/questions/21319883/adb-find-pid-from-the-adb-shell <br>
 `adb shell pidof <package.name>`
+
+***
+
+#### top
+List of Process on the device <br> 
+``` adb shell top ```
 
 ***
 

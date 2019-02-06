@@ -20,12 +20,6 @@
 | [RU] | Пишем игру на Java(Ява) - Клон Танков | UNK | https://www.youtube.com/watch?v=MCOzghxt8WM&list=PLwVvOVLAoKQl84bk2aCtkZgfb0qvq6ZHA |
 | [RU] | Создание сервера на Java | Winderton | https://youtu.be/Rr7oFuvVkkI |
 
-## Algorithms
-
-| Language | Name | Author | Link |
-| --- |  --- | --- | --- |
-| [RU] | Алгоритмы и структуры данных на Python 3 | Хирьянов Тимофей | https://youtu.be/KdZ4HF1SrFs |
-
 ## Python
 
 | Language | Name | Author | Link |
@@ -44,6 +38,20 @@
 | Language | Name | Author | Link |
 | --- |  --- | --- | --- |
 | [EN] | Instagram Bot | Andrey Rublyov | https://youtu.be/BGU2X5lrz9M <br /> https://youtu.be/OMfNn1Gfd10 <br /> https://youtu.be/Abow8NFd4UE |
+
+## Design Patterns / Шаблоны проектирования
+
+`Singleton, Command, Flyweight, Prototype, Observer, State, Strategy, Decorator`
+
+| Language | Name | Author | Link |
+| --- |  --- | --- | --- |
+| [RU] | Топ шаблонов проектирования которые должен знать программист | Winderton | https://youtu.be/BPRA2TbnRtk |
+
+## Algorithms / Алгоритмы
+
+| Language | Name | Author | Link |
+| --- |  --- | --- | --- |
+| [RU] | Алгоритмы и структуры данных на Python 3 | Хирьянов Тимофей | https://www.youtube.com/watch?v=KdZ4HF1SrFs&list=PLRDzFCPr95fK7tr47883DFUbm4GeOjjc0 |
 
 ## Neural Networks / Нейронные сети
 
@@ -74,5 +82,6 @@
 | [RU] | Антон Серпутько | Тестирование API | https://youtu.be/XR0YXH0ue2I |
 | [RU] | Тестирование | Академия Яндекса | https://www.youtube.com/channel/UC9VeXtf7fcCJUfmZ_cyweXA/featured |
 | [RU] | Автоматизация тестирования REST API на Java | UNK | https://youtu.be/bZE5hU5fZCY |
+| [EN] | Web Testing Framework | UNK | https://youtu.be/bpHTwO26HFc |
 
 <!-- |  |  |  |  | -->
