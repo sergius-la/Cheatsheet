@@ -86,6 +86,15 @@ https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branc
 git checkout -b <branch_name> <br>
 git push --set-upstream <remote_name> <local_branch_name>
 
+> Pull a remote branch
+https://gist.github.com/fabianmoronzirfas/4023446 <br>
+git fetch <br>
+git checkout origin/experimental
+
+> Git Visual Branch Changes
+https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs <br>
+git log --graph --oneline --all
+
 Local branches in your repository <br>
 `git branch`
 
