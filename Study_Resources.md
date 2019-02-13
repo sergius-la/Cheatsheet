@@ -74,6 +74,11 @@
 | [RU] | Метаданные: Невидимая информация о файлах | Over | https://youtu.be/LOaNcz-ccNQ |
 | [RU] | Метаданные фото | kotica | https://youtu.be/95kA9ldsqtc |
 
+## iOS Development
+| Language | Name | Author | Link |
+| --- |  --- | --- | --- |
+| [RU] | iOS Development with Swift Tutorials | Bucky Roberts | https://www.youtube.com/watch?v=83WXmhin_LU&list=PL6gx4Cwl9DGDgp7nGSUnnXihbTLFZJ79B |
+
 ## Testing
 
 | Language | Name | Author | Link |

@@ -194,8 +194,10 @@ Print newline, word, and byte counts for each file <br>
 
 ***
 
+#### passwd 
 
-
+Change user password - requited root account <br>
+`passwd`
 
 
 
