@@ -78,6 +78,7 @@
 | Language | Name | Author | Link |
 | --- |  --- | --- | --- |
 | [RU] | iOS Development with Swift Tutorials | Bucky Roberts | https://www.youtube.com/watch?v=83WXmhin_LU&list=PL6gx4Cwl9DGDgp7nGSUnnXihbTLFZJ79B |
+| [EN] | A Beginner’s Guide to Bezier Paths and Shape Layers | Gabriel | https://appcoda.com/bezier-paths-introduction/ |
 
 ## Testing
 
@@ -89,4 +90,4 @@
 | [RU] | Автоматизация тестирования REST API на Java | UNK | https://youtu.be/bZE5hU5fZCY |
 | [EN] | Web Testing Framework | UNK | https://youtu.be/bpHTwO26HFc |
 
-<!-- |  |  |  |  | -->
+<!-- | [] |  |  |  | -->
