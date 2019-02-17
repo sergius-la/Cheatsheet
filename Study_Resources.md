@@ -80,6 +80,11 @@
 | [RU] | iOS Development with Swift Tutorials | Bucky Roberts | https://www.youtube.com/watch?v=83WXmhin_LU&list=PL6gx4Cwl9DGDgp7nGSUnnXihbTLFZJ79B |
 | [EN] | A Beginner’s Guide to Bezier Paths and Shape Layers | Gabriel | https://appcoda.com/bezier-paths-introduction/ |
 
+## Android Development
+| Language | Name | Author | Link |
+| --- |  --- | --- | --- |
+| [EN] | Android Java Masterclass - Become an App Developer | Tim Buchalka | https://www.udemy.com/master-android-7-nougat-java-app-development-step-by-step/ |
+
 ## Testing
 
 | Language | Name | Author | Link |
