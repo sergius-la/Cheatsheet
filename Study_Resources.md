@@ -99,7 +99,7 @@ List of IT study material which will be useful for English and Russian speakers.
 | --- |  --- | --- | --- |
 | [RU] | Тестирование ПО – Software Testing | UNK | https://www.youtube.com/channel/UCLF3kBwJFbPK43C-BTFLKSw |
 | [RU] | Тестирование | Академия Яндекса | https://www.youtube.com/channel/UC9VeXtf7fcCJUfmZ_cyweXA/featured |
-| [EN] | Web Testing Framework | UNK | https://youtu.be/bpHTwO26HFc |
+
 
 ### REST API Testing
 | Language | Name | Author | Link |
@@ -114,6 +114,11 @@ List of IT study material which will be useful for English and Russian speakers.
 | Language | Name | Author | Link |
 | --- |  --- | --- | --- |
 | [EN] | Advanced Appium, Java Tutorials: Creating Mobile | Artur Spirin | https://www.youtube.com/watch?v=fCrpi_or7zU&list=PLK7KNOA7vbPOh_2sx4aKnU0y6DDUFtQaW |
+
+### Web Testing
+| Language | Name | Author | Link |
+| --- |  --- | --- | --- |
+| [EN] | Web Testing Framework | UNK | https://youtu.be/bpHTwO26HFc |
 
 <!-- ###
 | Language | Name | Author | Link |
