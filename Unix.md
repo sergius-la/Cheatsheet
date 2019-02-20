@@ -24,6 +24,8 @@ Executing multiple command use <br>
 
 > The "|" (pipe) operator sends the standard output of one command to another command as standard input. It allows commands to be combined in a sequential order
 
+> Command > append >>
+
 An interface to the on-line reference manuals <br>
 `man <command>`
 
@@ -122,6 +124,8 @@ IP Info <br>
 Send ECHO_REQUEST packets to network hosts <br>
 `ping <website/IP>`
 
+#### netstat
+
 ***
 
 #### cd
@@ -199,12 +203,41 @@ Print newline, word, and byte counts for each file <br>
 Change user password - requited root account <br>
 `passwd`
 
+***
 
+#### Shortcut
 
+'#' - Comment
 
+<kbd>⌃ Control</kbd> + <kbd>R - Search in the History
+<kbd>⌃ Control</kbd> + <kbd>A - Move to Begining
+<kbd>⌃ Control</kbd> + <kbd>E - Mo to the End
 
+***
 
+#### ln
 
+Make a link for a file
+ln -s file fileLINK
+
+***
+
+#### shutdown
+
+shutdown -r now - Restart now
+shutdown -h +60 - TurnOff in 60 nimutes
+
+***
+
+#### w
+
+w - what happening
+
+***
+
+#### mkdir
+
+mkdir -p - Make a full path
 
 
 

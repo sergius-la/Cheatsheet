@@ -1,8 +1,10 @@
 ## Study Resources - Programming
 
-List of IT study material which will be useful for English and Russian speakers. Most of courses are free, some of them paid from Udemy. If you'll be buying them wait couple days ussually Udemy drop price till ~10$ for course.
+> __Highly recommend to check:__
+Open Source Society University Computer Science - https://github.com/ossu/computer-science
+Programmer Competency Matrix - http://sijinjoseph.com/programmer-competency-matrix/
 
-> Programmer Competency Matrix - http://sijinjoseph.com/programmer-competency-matrix/
+List of IT study material which will be useful for English and Russian speakers. Most of courses are free, some of them paid from Udemy. If you'll be buying them wait couple days ussually Udemy drop price till ~10$ for course.
 
 ### Java Courses
 
@@ -108,7 +110,12 @@ List of IT study material which will be useful for English and Russian speakers.
 | [RU] | Автоматизация тестирования HTTP API с помощью Java на примере Jira API | Артур Пилюк | https://youtu.be/lyoWRhge6LI |
 | [EN] | No-frills REST API testing with REST-Assured | Michel Schudel | https://youtu.be/4MIY2M0zI6c |
 
-<!-- ##
+### Mobile Testing
+| Language | Name | Author | Link |
+| --- |  --- | --- | --- |
+| [EN] | Advanced Appium, Java Tutorials: Creating Mobile | Artur Spirin | https://www.youtube.com/watch?v=fCrpi_or7zU&list=PLK7KNOA7vbPOh_2sx4aKnU0y6DDUFtQaW |
+
+<!-- ###
 | Language | Name | Author | Link |
 | --- |  --- | --- | --- |
 | [] |  |  |  | -->
