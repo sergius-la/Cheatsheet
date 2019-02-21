@@ -199,6 +199,7 @@ https://git-scm.com/docs/git-pull <br>
 #### Resources:
 >[RU] http://dev-labinfo/2013/08/шпаргалка-по-git-основные-команды-слиян/ <br>
 [RU] https://ru.hexlet.io/blog/posts/how-to-use-github-badges <br>
+[EN] [RU] Most commonly used git tips and tricks https://github.com/git-tips/tips <br>
 [EN] [RU] https://git-scm.com/book/ru/v2 <br>
 [EN] https://learngitbranching.js.org/ <br>
 [Autocomplete for Mac's Terminal] https://apple.stackexchange.com/questions/55875/git-auto-complete-for-branches-at-the-command-line <br>
