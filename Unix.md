@@ -2,7 +2,7 @@
 | --- | --- |
 | `` | | -->
 
-# Unix commands
+# Unix/Linux commands
 
 #### Mac Terminal
 
@@ -238,6 +238,12 @@ w - what happening
 #### mkdir
 
 mkdir -p - Make a full path
+
+***
+
+#### profile
+
+nano ~/.bash_profile
 
 
 
