@@ -22,9 +22,17 @@ Executing multiple command use <br>
 
 #### General Commands
 
-> The "|" (pipe) operator sends the standard output of one command to another command as standard input. It allows commands to be combined in a sequential order
+https://askubuntu.com/questions/334994/which-one-is-better-using-or-to-execute-multiple-commands-in-one-line <br>
+A; B # Run A and then B, regardless of success of A
+A && B # Run B if and only if A succeeded
+A || B # Run B if and only if A failed
+A & # Run A in background.
+
+The "|" (pipe) operator sends the standard output of one command to another command as standard input. It allows commands to be combined in a sequential order
 
 > Command > append >>
+
+***
 
 An interface to the on-line reference manuals <br>
 `man <command>`
@@ -164,6 +172,9 @@ Delete files or directories <br>
 
 > Delete all files by format <br>
 `cd <path> && rm -rf *.<ext>` <br>
+
+> Delete all subfolder in the directory <br>
+`rm -R -- */` <br>
 
 | Key | Description |
 | --- | --- |

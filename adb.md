@@ -3,9 +3,13 @@
 [Android Developer](https://developer.android.com/studio/command-line/adb) - Android debug bridge documentation <br>
 [AdbCommands](https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8) - Adb useful commands list 
 
-> Debugging tools: <br>
+> Android SDK debugging tools: <br>
 uiautomatorviewer -- Android Automation Viewer <br>
 monitor -- Android Monitor
+
+Android SDK path:
+-   Windows: C:\Users\<username>\AppData\Local\Android\sdk
+-   Mac: /Users/<username>/Library/Android/sdk
 
 ***
 
@@ -352,5 +356,12 @@ https://blog.shvetsov.com/2013/02/grab-android-screenshot-to-computer-via.html <
 
 > For a list of all the available shell programs <br> 
 adb shell ls /system/bin
+
+***
+
+#### shell
+
+`adb shell start`
+`adb shell stop`
 
 ***
