@@ -1,5 +1,13 @@
 # Git
 
+#### Config
+Set Login, password for git. <br>
+`git config --global user.email "you@example.com"` <br>
+`git config --global user.name "Your Name"`
+`git config --global user.password "your password"`
+
+***
+
 #### Init
 Create an empty Git repository or reinitialize an existing one. <br>
 https://git-scm.com/docs/git-init <br>
