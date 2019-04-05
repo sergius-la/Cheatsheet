@@ -1,3 +1,9 @@
+# <img src="/imgs/py_icon.png" width="24" height="24"> Python
+
+__[Python Notes](https://github.com/sergius-la/Python)__
+
+***
+
 ### Shortcuts
 #### [IntelliJ IDEA, Eclipse](https://github.com/sergius-la/Cheatsheet/blob/master/IDE%20shortcuts:%20IntelliJ%20IDEA%2C%20Eclipse.md)  
 ---
