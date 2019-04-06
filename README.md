@@ -36,7 +36,7 @@
 
 # <img src="/imgs/shortcuts.jpeg" width="24" height="24"> Shortcuts
 
-[IntelliJ IDEA](https://github.com/sergius-la/Cheatsheet/blob/master/IDE%20shortcuts:%20IntelliJ%20IDEA%2C%20Eclipse.md)
+[IntelliJ IDEA](/IDEA_shortcuts.md)
 
 TODO: Eclipse, VS Code
                     
@@ -44,4 +44,4 @@ TODO: Eclipse, VS Code
 
 # <img src="/imgs/study_res.png" width="24" height="24"> Study Resources
 
-[Study resources links](https://github.com/sergius-la/Cheatsheet/blob/master/Study_Resources.md)
+[Study resources links](/Study_Resources.md)
