@@ -6,29 +6,29 @@
 
 # <img src="/imgs/java.png" width="24" height="24"> Java
 
-[Java Notes](https://github.com/sergius-la/Cheatsheet/blob/master/Java.md)
+[Java Notes](/Java.md)
 
-[Java - Data conversion](https://github.com/sergius-la/Cheatsheet/blob/master/Java%20-%20Data%20conversion.md)
+[Java - Data conversion](/Java_Data_conversion.md)
 
 ***
 
 # <img src="/imgs/terminal.png" width="24" height="24"> Unix / Linux
 
-[Commands](https://github.com/sergius-la/Cheatsheet/blob/master/Unix.md)
+[Commands](/Unix.md)
 
-[vim](https://github.com/sergius-la/Cheatsheet/blob/master/vim.md)
+[vim](/vim.md)
 
 ***
 
 # <img src="/imgs/git.png" width="24" height="24"> Git
 
-[Git commands](https://github.com/sergius-la/Cheatsheet/blob/master/Git.md)
+[Git commands](/Git.md)
 
 ***
 
 # <img src="/imgs/adb.jpeg" width="24" height="24"> Android Debuging Bridge (adb)
 
-[adb - commands](https://github.com/sergius-la/Cheatsheet/blob/master/adb.md)
+[adb - commands](/adb.md)
 
 [adb - KeyEvent](https://github.com/sergius-la/Cheatsheet/blob/master/adb%20-%20KeyEvent.md)
 
