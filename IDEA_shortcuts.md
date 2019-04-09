@@ -19,11 +19,6 @@
 | Delete Line |<kbd>⌘ Command</kbd> + <kbd>⌫ Backspace</kbd> |
 | Preference | <kbd>⌘ Command</kbd> + <kbd>,</kbd> |
 
-## Visual Studio Code
-
-| Mac Shortcuts | IDEA |
-| --- | --- |
-| Run | <kbd>⌥ Alt</kbd> + <kbd>⌘ Command</kbd> + <kbd>r |
 
 
 <!-- TODO: Win Shortcuts -->

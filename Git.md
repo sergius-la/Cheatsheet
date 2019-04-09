@@ -61,6 +61,9 @@ Remove files from the working tree and from the index. <br>
 https://git-scm.com/docs/git-rm <br>
 `git rm 'file_name'`
 
+Remove from repository keep local <br>
+`git rm --cached <file>`
+
 ***
 
 #### Commit
@@ -98,10 +101,11 @@ https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branc
 git checkout -b <branch_name> <br>
 git push --set-upstream <remote_name> <local_branch_name>
 
-> Pull a remote branch
+> Pull / Copy a remote branch
 https://gist.github.com/fabianmoronzirfas/4023446 <br>
+https://stackoverflow.com/questions/9537392/git-fetch-remote-branch <br>
 git fetch <br>
-git checkout origin/experimental
+git checkout --track origin/<remote_branch_name>
 
 > Git Visual Branch Changes
 https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs <br>
