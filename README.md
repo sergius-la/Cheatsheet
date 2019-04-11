@@ -36,9 +36,8 @@
 
 # <img src="/imgs/shortcuts.jpeg" width="24" height="24"> Shortcuts
 
-[IntelliJ IDEA](/IDEA_shortcuts.md)
-
-TODO: Eclipse, VS Code
+[IntelliJ IDEA](/IDEA_shortcuts.md) <br>
+[Visual Studio Code](/VS_Code.md)
                     
 ***
 

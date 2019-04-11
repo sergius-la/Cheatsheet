@@ -96,10 +96,11 @@ List, create, or delete branches. <br>
 https://git-scm.com/docs/git-branch <br>
 `branch`
 
-> Create a remote branch
-https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch <br>
-git checkout -b <branch_name> <br>
-git push --set-upstream <remote_name> <local_branch_name>
+> Create and push new branch to a remote Git branch <br>
+git checkout -b <feature_branch_name> <br>
+git push -u <br>
+git push --set-upstream origin <br> <feature_branch_name>
+https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch
 
 > Pull / Copy a remote branch
 https://gist.github.com/fabianmoronzirfas/4023446 <br>
@@ -209,6 +210,13 @@ https://git-scm.com/docs/git-stash <br>
 Fetch from and integrate with another repository or a local branch. <br>
 https://git-scm.com/docs/git-pull <br>
 `git pull`
+
+***
+
+## Files
+
+Copy all modified and new files to upper directory
+`cp --parents $(git ls-files --modified --others) ../`
 
 ***
 
