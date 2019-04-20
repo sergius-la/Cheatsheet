@@ -1,6 +1,10 @@
 # Visual Studio Code
 
-## Mac
+## Extensions
+
+- [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python)
+
+## macOS Shortcuts
 
 | Description | Shortcut |
 | --- | --- |

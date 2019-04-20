@@ -1,36 +1,35 @@
 # <img src="/imgs/py_icon.png" width="24" height="24"> Python
 
-[Python Notes](https://github.com/sergius-la/Python)
+[__Python Notes__](https://github.com/sergius-la/Python)
 
 ***
 
 # <img src="/imgs/java.png" width="24" height="24"> Java
 
-[Java Notes](/Java.md)
-
-[Java - Data conversion](/Java_Data_conversion.md)
+- [__Java Notes__](/Java.md)
+- [__Java - Data conversion__](/Java_Data_conversion.md)
 
 ***
 
 # <img src="/imgs/terminal.png" width="24" height="24"> Unix / Linux
 
-[Commands](/Unix.md)
-
-[vim](/vim.md)
+- [__Commands__](/Unix.md)
+- [__vim__](/vim.md)
 
 ***
 
 # <img src="/imgs/git.png" width="24" height="24"> Git
 
-[Git commands](/Git.md)
+- [__Git commands__](/Git.md)
+- Resources:
+    - [_Most commonly used git tips and tricks_](https://github.com/git-tips/tips)
 
 ***
 
 # <img src="/imgs/adb.jpeg" width="24" height="24"> Android Debuging Bridge (adb)
 
-[adb - commands](/adb.md)
-
-[adb - KeyEvent](https://github.com/sergius-la/Cheatsheet/blob/master/adb%20-%20KeyEvent.md)
+- [__adb - commands__](/adb.md)
+- [__adb - KeyEvent__](/adb%20-%20KeyEvent.md)
 
 ***
 
@@ -39,6 +38,12 @@
 [IntelliJ IDEA](/IDEA_shortcuts.md) <br>
 [Visual Studio Code](/VS_Code.md)
                     
+***
+
+# <img src="/imgs/bootstrap.jpg" width="24" height="24"> Bootstrap
+
+[_Bootstrap_](/https://getbootstrap.com/)
+
 ***
 
 # <img src="/imgs/study_res.png" width="24" height="24"> Study Resources
