@@ -1,11 +1,8 @@
 ## Study Resources - Programming
 
-> __Highly recommend to check:__ <br>
-Open Source Society University Computer Science - https://github.com/ossu/computer-science <br>
+> Open Source Society University Computer Science - https://github.com/ossu/computer-science <br>
 Programmer Competency Matrix - http://sijinjoseph.com/programmer-competency-matrix/ <br>
 Google’s Guide to Technical Development - https://techdevguide.withgoogle.com/
-
-List of IT study material which will be useful for English and Russian speakers. Most of courses are free, some of them paid from Udemy. If you'll be buying them wait couple days ussually Udemy drop price till ~10$ for course.
 
 ### Java Courses
 

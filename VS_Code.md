@@ -2,11 +2,14 @@
 
 ## Extensions
 
-- [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python)
-    - [Python Test Explorer for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter)
+- Programming Languages:
+    - [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python)
+        - [Python Test Explorer for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter)
+- Style:
+    - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
-- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Partial Diff](https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff)
+- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
 
 ## macOS Shortcuts
 

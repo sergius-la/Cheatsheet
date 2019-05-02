@@ -1,9 +1,11 @@
 # Git
 
+## Configuration
+
 #### Config
 Set Login, password for git. <br>
 `git config --global user.email "you@example.com"` <br>
-`git config --global user.name "Your Name"`
+`git config --global user.name "Your Name"` <br>
 `git config --global user.password "your password"`
 
 Reset credentials. <br>
@@ -26,11 +28,18 @@ https://git-scm.com/docs/git-clone <br>
 
 ***
 
+## Changes status
+
 #### Status
 
 Show the working tree status. <br>
 https://git-scm.com/docs/git-status <br>
 `git status`
+
+#### Fetch
+
+Check the remote changes. <br>
+`git fetch`
 
 ***
 
@@ -54,6 +63,11 @@ Stages modifications and deletions, without new files. <br>
  `git add -i`
 
 ***
+
+## Files
+
+Copy all modified and new files to upper directory <br>
+`cp --parents $(git ls-files --modified --others) ../`
 
 #### Remove Files
 
@@ -92,6 +106,8 @@ Convenient way to modify the most recent commit. It can also be used to simply e
 `git commit --amend`
 
 ***
+
+## Branching
 
 #### Branch
 
@@ -207,6 +223,9 @@ Stash the changes in a dirty working directory away. <br>
 https://git-scm.com/docs/git-stash <br>
 `git stash`
 
+Rever changes from stash <br>
+`git stash pop`
+
 ***
 
 #### Pull
@@ -215,8 +234,3 @@ https://git-scm.com/docs/git-pull <br>
 `git pull`
 
 ***
-
-## Files
-
-Copy all modified and new files to upper directory
-`cp --parents $(git ls-files --modified --others) ../`

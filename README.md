@@ -1,6 +1,15 @@
 # <img src="/imgs/py_icon.png" width="24" height="24"> Python
 
-[__Python Notes__](https://github.com/sergius-la/Python)
+- [__Python Notes__](https://github.com/sergius-la/Python)
+- [_PyCharm_](https://www.jetbrains.com/pycharm/)
+
+***
+
+# <img src="/imgs/sql.png" width="24" height="24"> SQL
+
+- [_PostgreSQL_](https://www.postgresql.org/docs/)
+- [_SQLite_](https://www.sqlite.org/docs.html)
+- [_DataGrip_](https://www.jetbrains.com/datagrip/)
 
 ***
 
@@ -33,16 +42,17 @@
 
 ***
 
-# <img src="/imgs/shortcuts.jpeg" width="24" height="24"> Shortcuts
+# <img src="/imgs/shortcuts.jpeg" width="24" height="24"> IDEs
 
-[IntelliJ IDEA](/IDEA_shortcuts.md) <br>
-[Visual Studio Code](/VS_Code.md)
+- [IntelliJ IDEA](/IDEA_shortcuts.md)
+- [Visual Studio Code](/VS_Code.md)
                     
 ***
 
 # <img src="/imgs/bootstrap.jpg" width="24" height="24"> Bootstrap
 
-[_Bootstrap_](/https://getbootstrap.com/)
+- [__Bootstrap Notes__](/bootstrap_notes.md)
+- [_Bootstrap docs_](https://getbootstrap.com/)
 
 ***
 
