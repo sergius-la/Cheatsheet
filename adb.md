@@ -31,16 +31,28 @@ List of all connected devices <br>
 
 ## Device information
 
-#### Dumpsys
-`dumpsys` is a tool that runs on Android devices to get diagnostic output for all system services running on a device.
+#### [adb docs: dumpsys](https://developer.android.com/studio/command-line/dumpsys)
 
-[adb docs: dumpsys](https://developer.android.com/studio/command-line/dumpsys)
+`dumpsys` is a tool that runs on Android devices to get diagnostic output for all system services running on a device.
 
 List of Services on the device <br> 
 `adb shell dumpsys | grep <DUMP OF SERVICE>`
 
 Screen resolution <br> 
 `adb shell dumpsys display | grep density`
+
+#### getprop
+
+[Android System Properties and Local Preferences](https://developer.oculus.com/documentation/mobilesdk/1.0.3/concepts/mobile-localprefs/)<br>
+`adb shell getprop`
+
+Android device: <br>
+`adb shell getprop ro.product.manufacturer` <br>
+`adb shell getprop ro.product.model` <br> 
+`adb shell getprop ro.product.device` <br>
+`adb shell getprop ro.build.version.release` <br> 
+`adb shell getprop ro.serialno` <br>
+`adb shell getprop ro.operator.alpha`
 
 ***
 
@@ -51,6 +63,16 @@ Reboot the device. <br>
 
 Reboots into bootloade. <br>
 `adb reboot bootloader`
+
+***
+
+## Bluetooth
+
+Get infromation about Bluetooth <br> 
+`adb shell dumpsys bluetooth_manager`
+
+Get information about conected device <br>
+`adb shell dumpsys bluetooth_manager | grep -A1 Bonded`
 
 Bluetooth turn off (need permition) <br> 
 `adb shell service call bluetooth_manager 8`
@@ -71,14 +93,11 @@ Swipe by coordinates X1 Y1 X2 Y2. <br>
 
 ***
 
-### Memory Usage
+## Memory Usage
 
 #### dumpsys meminfo
 Snapshot of RAM memory usage <br>
-`adb shell dumpsys meminfo <package.name>`
-
-Snapshot of how your app's memory is divided between different types of RAM <br>
-`adb shell dumpsys meminfo <com.package>` <br> 
+`adb shell dumpsys meminfo <package.name>` <br>
 `adb shell dumpsys meminfo <PID>`
 
 #### procstats
@@ -99,74 +118,42 @@ Dumps the state of the system’s input devices, such as keyboards and touchscre
 ***
 
 #### dumpsys netstats
-Inspect network diagnostics<br>
 
+Inspect network diagnostics<br>
 `adb shell dumpsys input`
 
 ***
 
+## Processes
+
 #### pidof
 
-PID of the particular process <br>
-https://stackoverflow.com/questions/21319883/adb-find-pid-from-the-adb-shell <br>
+[PID of the particular process](https://stackoverflow.com/questions/21319883/adb-find-pid-from-the-adb-shell) <br>
 `adb shell pidof <package.name>`
 
 ***
 
 #### top
 List of Process on the device <br> 
-``` adb shell top ```
+`adb shell top`
 
 ***
 
-#### Bluetooth
+## Logcat
 
-Get infromation about Bluetooth <br> 
-``` adb shell dumpsys bluetooth_manager ```
-
-Get information about conected device <br>
-`adb shell dumpsys bluetooth_manager |  grep -A1 Bonded`
-
-***
-
-#### Getprop
-Android System Properties and Local Preferences
-https://developer.oculus.com/documentation/mobilesdk/1.0.3/concepts/mobile-localprefs/ <br>
-`adb shell getprop`
-
-Get Android device manufacturer. <br>
-`adb shell getprop ro.product.manufacturer`
-
-`adb shell getprop ro.product.model` 
-
-`adb shell getprop ro.product.device` 
-
-`adb shell getprop ro.build.version.release` 
-
-`adb shell getprop ro.serialno` 
-
-`adb shell getprop ro.operator.alpha`
-
-***
-
-#### Logcat
-Logcat is a command-line tool that dumps a log of system messages, including stack traces when the device throws an error and messages. <br>
-https://developer.android.com/studio/command-line/logcat
-
-Run the log from a device <br>
-``` adb logcat ```
-
-Clear the log on a device <br>
-``` adb logcat -c ```
-
-Dump logs from buffer <br>
-`adb logcat -d`
+[adb docs: logcat](https://developer.android.com/studio/command-line/logcat)
 
 > Dump log into file <br>
 `adb logcat -d >'file_name'.txt`
 
-[//]: #TODO: (Log for package)
+Run the log from a device <br>
+`adb logcat`
 
+Clear the log on a device <br>
+`adb logcat -c`
+
+Dump logs from buffer <br>
+`adb logcat -d`
 
 | Command | Description |
 | ------ | ------ |
@@ -179,10 +166,9 @@ Dump logs from buffer <br>
 
 ***
 
-### Application manipulation
+## Application manipulation
 
-#### am (activity manager)
-[activity manager](https://gist.github.com/tsohr/5711945) - Android activity manager "am" command help 
+#### [am (activity manager command help)](https://gist.github.com/tsohr/5711945)
 
 Start Application <br>
 `adb shell am start <package.name>/<activity_name>`
@@ -195,64 +181,73 @@ Start Service <br>
 `adb shell am startservice <service.name>`
 
 Close Application <br>
-``` adb shell am force-stop <service.name> ```
+`adb shell am force-stop <service.name>`
 
 Open Market for Particulaar Application <br>
 `adb shell am start -a android.intent.action.VIEW -d 'market://details?id=<package.name>'`
 
+***
+
 #### pm (package manager)
+
 Clear Application cache <br>
-``` adb shell pm clear <service.name> ```
+`adb shell pm clear <service.name>`
+
+List all packages on your device. <br>
+`adb shell pm list packages`
+
+| Flag | Description |
+| ------ | ------ |
+| `pm list packages -f` | full path |
+| `pm list packages -e` | enabled packages |
+| `pm list packages -s` | system packages |
+| `pm list packages -3` | third party packages |
 
 ***
 
-#### Install
+#### Install apk
 
 Install Application <br>
-``` adb install "path"/"file_name.apk" ```
+`adb install <local_path>/<file_name.apk>`
 
-Replace / Reinstall Application <br>
-``` adb install -r "path"/"file_name.apk" ```
-
-Install Application in a sdcard <br>
-``` adb install -s "path"/"file_name.apk" ```
-
-Downgrade Application <br>
-``` adb install -d "path"/"file_name.apk" ```
-
-Install on a remote device <br>
-``` adb -s "IP":"Port" install "path"/"file_name.apk" ```
+| Flag | Description |
+| ------ | ------ |
+| `install -r` | Replace / Reinstall Application |
+| `adb install -s` | Install Application in a sdcard |
+| `adb install -d` | Downgrade Application |
 
 ***
 
 #### Uninstall
 
 Delete Application <br>
-``` adb uninstall "package_name.android" ```
+`adb uninstall <package_name.android>`
 
 Delete Application, but keep the data after package removal <br>
-``` adb uninstall -k "package_name.android" ```
-
--k keeps the data in the cache after package removal
+`adb uninstall -k <package_name.android>`
 
 ***
 
-### Monkey Test
+<!-- Application manipulation -->
 
-Device Monkey Test <br>
-``` adb shell monkey "number_of_action" ```
+## Package / Application Information
 
-Application Monkey Test <br>
-``` adb shell monkey -p "package_name.android" "number_of_action" ```
+> Package Name & Activity Name from current window. <br>
+`adb shell dumpsys window windows | grep -E 'mCurrentFocus'`
+
+Package version. <br>
+`adb shell dumpsys package <com.package.name> | grep version`
 
 ***
+
+<!-- Package / Application Information -->
 
 ### Networking
 
 netstat -- Show active interten conection
 
 Device IP address 
-``` adb shell ip addr ```
+`adb shell ip addr`
 
 Open the Port (Common use: 5555 or 5554) <br>
 ``` adb tcpip "port_number" ```
@@ -265,41 +260,6 @@ Connecting device remote (The port must be open) <br>
 #### Shell
 
 adb shell
-
-***
-
-### Packages list
-
-List all packages on your device. <br>
-`pm list packages`
-
-All packages on your device with locations. <br>
-`pm list packages -f`
-
--f full path
--e enabled packages
--s system packages
--3 third party packages 
-
-This will delete all data associated with a package.<br>
-`adb shell pm clear <package>`
-
-***
-
-### Package / Application Information
-
-#### Dumpsys
-
-Package Name & Activity Name from current window. <br>
-`adb shell dumpsys window windows | grep -E 'mCurrentFocus'`
-
-Package version. <br>
-`adb shell dumpsys package <com.package.name> | grep version`
-
-#### pm (Package Manager)
-
-How to find name packages. <br>
-`adb shell pm list packages | grep <name>`
 
 ***
 
@@ -354,6 +314,16 @@ https://blog.shvetsov.com/2013/02/grab-android-screenshot-to-computer-via.html <
 
 > For a list of all the available shell programs <br> 
 adb shell ls /system/bin
+
+***
+
+#### Monkey Test
+
+Device Monkey Test <br>
+`adb shell monkey <number_of_action>`
+
+Application Monkey Test <br>
+`adb shell monkey -p <package_name.android> <number_of_action>`
 
 ***
 
