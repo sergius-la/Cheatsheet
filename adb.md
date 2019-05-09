@@ -1,6 +1,6 @@
 # Android Debug Bridge (adb)
 
-- [Android debug bridge documentation](https://developer.android.com/studio/command-line/adb)
+- [Android debug bridge docs](https://developer.android.com/studio/command-line/adb)
 - [Adb useful commands list](https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8) 
 
 
@@ -27,11 +27,24 @@ List of all connected devices <br>
 | adb | -d | Work with a real device |
 | adb | -e | Work with an emulator |
 
-Close Emulator <br>
-``` adb emu kill  ```
 ***
 
-### Device manipulation
+## Device information
+
+#### Dumpsys
+`dumpsys` is a tool that runs on Android devices to get diagnostic output for all system services running on a device.
+
+[adb docs: dumpsys](https://developer.android.com/studio/command-line/dumpsys)
+
+List of Services on the device <br> 
+`adb shell dumpsys | grep <DUMP OF SERVICE>`
+
+Screen resolution <br> 
+`adb shell dumpsys display | grep density`
+
+***
+
+## Device manipulation
 
 Reboot the device. <br>
 `adb reboot`
@@ -39,37 +52,22 @@ Reboot the device. <br>
 Reboots into bootloade. <br>
 `adb reboot bootloader`
 
-Bluetooth to disable (need permition) <br> 
+Bluetooth turn off (need permition) <br> 
 `adb shell service call bluetooth_manager 8`
 
-***
+## User actions
 
-#### Key Event
-[List of events](https://developer.android.com/reference/android/view/KeyEvent) - Android developer documentation 
+[adb docs: List of events](https://developer.android.com/reference/android/view/KeyEvent) 
 
 Input keyevent. <br>
 `adb shell input keyevent <event_number>` <br>
 `adb shell "input keyevent --longpress 26 && input keyevent --longpress 24"`
 
-Tap X,Y position. <br> 
+Tap X, Y position. <br> 
 `adb shell input tap <X> <Y>`
 
 Swipe by coordinates X1 Y1 X2 Y2. <br> 
 `adb shell input swipe <X1> <Y1> <X2> <Y2>`
-
-***
-
-### Device information
-
-#### Dumpsys
-`dumpsys` is a tool that runs on Android devices to get diagnostic output for all system services running on a device. <br>
-https://developer.android.com/studio/command-line/dumpsys
-
-List of Services on the device <br> 
-``` adb shell dumpsys | grep "DUMP OF SERVICE" ```
-
-Screen resolution <br> 
-``` adb shell dumpsys display | grep density ```
 
 ***
 
@@ -366,3 +364,6 @@ adb shell ls /system/bin
 `adb shell stop`
 
 ***
+
+Close Emulator <br>
+``` adb emu kill  ```
