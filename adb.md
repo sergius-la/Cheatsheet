@@ -1,23 +1,26 @@
 # Android Debug Bridge (adb)
 
-[Android Developer](https://developer.android.com/studio/command-line/adb) - Android debug bridge documentation <br>
-[AdbCommands](https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8) - Adb useful commands list 
+- [Android debug bridge documentation](https://developer.android.com/studio/command-line/adb)
+- [Adb useful commands list](https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8) 
 
-> Android SDK debugging tools: <br>
-uiautomatorviewer -- Android Automation Viewer <br>
-monitor -- Android Monitor
+
+Android SDK debugging tools:
+- uiautomatorviewer -- Android Automation Viewer
+- monitor -- Android Monitor
 
 Android SDK path:
--   Windows: C:\Users\<username>\AppData\Local\Android\sdk
--   Mac: /Users/<username>/Library/Android/sdk
+- Windows: `C:\Users\<username>\AppData\Local\Android\sdk`
+- Mac: `/Users/<username>/Library/Android/sdk`
 
 ***
 
-List of all connected devices <br>
-`adb devices`
+## Devices
 
 > Work with a particular device <br>
 `adb -s <device>`
+
+List of all connected devices <br>
+`adb devices`
 
 | Command | Key | Description |
 | --- |  --- | --- |
@@ -336,9 +339,6 @@ https://blog.shvetsov.com/2013/02/grab-android-screenshot-to-computer-via.html <
 #### Make a Screenrecord
 -bit
 
-***
-
-
 `adb -s "serial number" shell screenrecord --time-limit "seconds" /"device_directory"/"file_name.mp4"` <br>
 `adb shell screenrecord --time-limit 15 /sdcard/1.mp4` <br>
 `adb -s emulator-5554 shell screenrecord --time-limit 15 /sdcard/happy.mp4`
@@ -362,6 +362,7 @@ adb shell ls /system/bin
 #### shell
 
 `adb shell start`
+
 `adb shell stop`
 
 ***
