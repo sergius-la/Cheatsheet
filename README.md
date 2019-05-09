@@ -20,6 +20,12 @@
 
 ***
 
+# <img src="/imgs/swift.png" width="24" height="24"> Swift
+
+- [__Java Notes__](/swift.md)
+
+***
+
 # <img src="/imgs/terminal.png" width="24" height="24"> Unix / Linux
 
 - [__Commands__](/Unix.md)
