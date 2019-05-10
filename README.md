@@ -15,8 +15,8 @@
 
 # <img src="/imgs/java.png" width="24" height="24"> Java
 
-- [__Java Notes__](/Java.md)
-- [__Java - Data conversion__](/Java_Data_conversion.md)
+- [__Java Notes__](https://github.com/sergius-la/Java)
+- [_IntelliJ IDEA_](https://www.jetbrains.com/idea/)
 
 ***
 
