@@ -1,0 +1,16 @@
+Algorithm
+
+int temp;
+
+for (i to length) {
+    
+    for (j to length - 1) {
+        
+        if (j < j+1) {
+            temp = j
+            j+1 = j
+            j = temp
+        }
+        
+    }
+}

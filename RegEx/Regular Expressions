@@ -1,0 +1,28 @@
+. any single character
+[] character class: any single character that appears inside the brackets
+* quantifier: 0 or more of the preceding character (or group)
++ quantifier: 1 or more of the preceding character (or group)
+? quantifier: 0 or 1 of the preceding character (or group)
+[1, 5] quantifier: 1 through 5 of the preceding character (or group)
+| alternation (or): the character /group on the left or the character / group on the right 
+() grouping: often using with alternation and / or quantifier
+
+
+^[A-z]* - First word in the sentesice
+^\w - First letter from a sentence
+
+
+.$ - Last character in a String (any character or a symbol)
+^. - First character in a String (any character or a symbol)
+
+
+\d -- Any Digit, short for [0-9] 
+\D -- Everything not a digit [^0-9] 
+\s -- A whitespace character, short for [\t\n\x0b\r\f]
+\S -- A non-whitespace character, short [^\s]
+\w -- A word character, short for [a-zA-Z_0-9]
+\W -- Special Characters, Spases, Tab, Non a word character [^\w]
+\b -- Matches a word boundary where a word character is [a-zA-Z0-9_]
+
+
+

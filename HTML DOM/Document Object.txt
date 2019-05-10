@@ -1,0 +1,4 @@
+JavaScript DOM Tutorial: https://youtu.be/hDN5IGUv3Yw
+
+// To get a document Object need to send command into the console (Developers Tools)
+--> document
