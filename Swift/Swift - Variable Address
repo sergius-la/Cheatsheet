@@ -1,0 +1,7 @@
+
+
+// Print Variable Address
+let mySting = "123"
+var mySecond = "321"
+var result = mySting + mySecond
+withUnsafePointer(to: &result) {print($0)}

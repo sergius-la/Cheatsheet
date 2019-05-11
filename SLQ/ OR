@@ -1,0 +1,18 @@
+-- AND Syntax--
+SELECT column_name1, column_name2, ...
+FROM table_name
+WHERE column_name condition1, AND column_name condition2, AND ...
+--
+
+
+-- OR Syntax--
+SELECT column_name1, column_name2, ...
+FROM table_name
+WHERE column_name condition1, OR column_name condition2, OR ...
+--
+
+
+Boolean: AND, OR 
+WHERE DEPARTMENT_ID > 80 AND LAST_NAME = ‘Smith’
+WHERE DEPARTMENT_ID = 80 OR DEPARTMENT_ID = 100 
+--

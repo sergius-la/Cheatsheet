@@ -1,0 +1,22 @@
+-- Regular Expression / LIKE --
+% sign can be used to define missing character(s) in the
+    pattern both before and after the pattern.
+_  (underscore) sign can be used to define only ONE missing
+    character in the pattern both before and after the pattern
+FIRST_NAME LIKE ‘Nan%’      Nan, Nancy, Nanzan, Nanitta
+FIRST_NAME LIKE ‘%Nan’      A’Nan, BeNan 
+FIRST_NAME LIKE ‘%Nan%’   Nan, A’Nan, BeNaner 
+FIRST_NAME LIKE ‘_ean’         Dean, Sean, Peancy
+--
+
+
+
+
+SELECT FIRST_NAME, LAST_NAME 
+FROM employees
+WHERE FIRST_NAME LIKE 'A%'
+
+
+SELECT FIRST_NAME, LAST_NAME 
+FROM employees
+WHERE NOT FIRST_NAME LIKE '%al%'

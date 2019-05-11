@@ -1,0 +1,37 @@
+-- Data Definition Language --
+
+CREATE DATABASE - creates a new database
+ALTER DATABASE - modifies a database
+CREATE TABLE - creates a new table
+ALTER TABLE - modifies a table
+
+CREATE INDEX - creates an index (search key)
+DROP INDEX - deletes an index
+
+DESC Table_Name -- Get table description
+DROP TABLE Table_Name -- Delete a table!
+
+
+-- Создание Таблицы (Колонка Тип Данных)
+CREATE TABLE table_name (column_name int, column_name varchar(255), column_name char())
+
+
+-- Rename Table_Name
+ALTER TABLE table_name
+RENAME TO new_table_name;
+
+-- Значение в ячейки не может быть нулем.
+ALTER TABLE table_name
+MODIFY column_name datatype NOT NULL;
+
+-- Удаление колонки из таблицы 
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+-- Присвоение Primaty Key к Колонке
+ALTER TABLE Ctable_name
+ADD PRIMARY KEY (column_name);
+
+-- Добавление Колонки в Таблицу
+ALTER TABLE table_name 
+ADD column_name data_type;

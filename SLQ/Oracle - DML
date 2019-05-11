@@ -1,0 +1,59 @@
+--Data Manipulation Language--
+
+-- Operators in the WHERE Clause --
+BETWEEN - Between an inclusive range
+LIKE - Search for a pattern
+IN - To specify multiple possible values for a column
+= Equal
+!= Not Equal
+> Greater than
+< Less than
+>= Greater than or equal
+<= Less than or equal
+
+-- Data Matagment Language --
+
+UPDATE - updates data in a database
+DELETE - deletes data from a database
+INSERT INTO - inserts new data into a database
+--
+
+-- Вставление Данных в таблицу
+INSERT INTO table_name 
+VALUES (2, 'Shtern', 'Klara', 'F')  
+
+INSERT INTO table_name (column_name1, column_name2, ...)
+VALUES (value1, 'value1', ...) 
+
+-- Введение данных в таблицу со счетчиком
+INSERT INTO table_name 
+VALUES ((SELECT MAX (column_name) + 1 from table_name ), Int_data, Int_data, 'Text_data')
+--
+
+-- Updating Specific Rows/Ячейку
+UPDATE <table>
+SET <column> = <value>
+WHERE <condition>;
+
+-- Updating Specific Rows - Example
+UPDATE City_Info_OK999 
+SET Good_attraction = 'Y' 
+WHERE STATE='NY';
+
+-- Обновить всю колонку с данными
+UPDATE table_name SET column_name='data'
+
+
+-- Переименовать Колонку
+ALTER TABLE table_name
+RENAME  COLUMN column_name TO new_column_name;
+
+-- Поменять тип данных в колонке.
+ALTER TABLE table_name
+MODIFY column_name datatype;
+
+
+-- Deleting a ROW in the Table
+DELETE FROM Persons
+WHERE LastName='Petrov'
+

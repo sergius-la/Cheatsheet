@@ -1,0 +1,7 @@
+let digits = [1,4,10,15]
+let even = digits.filter { $0 % 2 == 0 }
+// [4, 10] - Отфильтровать все что кратное двух. $0 первый элемент, операция со вторым элементом
+
+https://useyourloaf.com/blog/swift-guide-to-map-filter-reduce/
+https://medium.com/@mimicatcodes/simple-higher-order-functions-in-swift-3-0-map-filter-reduce-and-flatmap-984fa00b2532
+https://developer.apple.com/documentation/swift/set/1688238-filter

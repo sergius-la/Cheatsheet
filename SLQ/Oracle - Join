@@ -1,0 +1,19 @@
+-- Inner Join (defalt)
+
+-- 2 Tables
+SELECT Employees.First_Name, Employees.Last_Name, DEPARTMENTS.DEPARTMENT_NAME
+FROM Employees, DEPARTMENTS
+WHERE Employees.DEPARTMENT_ID = DEPARTMENTS.DEPARTMENT_ID
+
+
+SELECT e.FIRST_NAME, e.LAST_NAME, d.DEPARTMENT_ID, d.DEPARTMENT_NAME  
+FROM employees e, departments d
+WHERE e.department_id = d.department_id
+order by d.DEPARTMENT_ID, e.LAST_NAME
+
+
+
+SELECT e.FIRST_NAME, e.LAST_NAME, d.DEPARTMENT_ID, d.DEPARTMENT_NAME  
+FROM employees e, departments d
+WHERE e.department_id = d.department_id
+AND d.DEPARTMENT_NAME = 'Shipping'

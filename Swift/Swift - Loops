@@ -1,0 +1,33 @@
+
+//Stride
+
+//С шагом 3
+for i in stride(from: 1, to: 10, by: 3) {
+    print(i)
+}
+
+//Stride
+
+
+// Looping throught Array Backwards - Going Back
+var listOfNumbers = [1, 2, 3, 10, 100, 2]
+
+for i in 1...listOfNumbers.count {
+    print(listOfNumbers[listOfNumbers.count - i])
+}
+
+
+
+//Проверка i+1 перед выполнением
+var inputArray = [1, 1, 1]
+
+var count = inputArray.count
+
+for i in 0..<count-1 {
+    
+    if inputArray[i + 1] < count {
+        continue
+    }
+    
+}
+//

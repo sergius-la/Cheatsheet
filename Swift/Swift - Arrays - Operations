@@ -1,0 +1,79 @@
+//Changing values use the assignment operator (=) 
+var numbers: [Int] = [1, 2, 3]
+
+numbers[0] = 7 // numbers will be [7, 2, 3]
+numbers[1] = 5 // numbers will be [7, 5, 3]
+numbers[2] = 4 // numbers will be [7, 5, 4]
+
+
+
+
+//Swaping первого и последнего элементв в массиве. По индексу.
+var arr = [1, 2, 3, 4, 5]
+arr.swapAt(0, arr.count-1)
+print(arr) // [5, 2, 3, 4, 1]
+
+
+
+//Удаление элементов из массива от индекса до индекса
+var a = [2, 3, 2, 3, 4, 5]
+var l = 2
+var r = 4
+a.removeSubrange(ClosedRange(uncheckedBounds: (lower: l, upper: r)))
+print(a) // [2, 3, 5]
+
+
+
+
+// Нахождение Середины Array для нечетного будет число по середине
+arr.count % 2 == 0
+
+// Нахождение Середины Array для четного будет два числа по середине
+ var mun = arr.count
+ if arr.count % 2 != 0
+ arr[mun / 2 - 1] //Число 1  
+ arr[mun / 2] //Число 2
+//
+ 
+
+
+
+
+
+//Отсортировать Array только на уникальные значения
+var a = [1,2,3,4,5,2,4,1,4,3,6,5]
+
+// Remove duplicates:
+// first by converting to a Set
+// and then back to Array
+a = Array(Set(a))
+
+print(a) //[2, 4, 5, 6, 3, 1]
+//
+
+
+// Отфильтровать массив на специальные символы
+var a = [-1, 150, 190, 170, -1, -1, 160, 180]
+
+var b = [Int]()
+for i in 0...a.count-1 {
+    // Filter on a specific number / character
+    if a[i] != -1 {
+        b.append(a[i])
+    }
+}
+print(b) // [150, 190, 170, 160, 180]
+
+
+//Метод для Фильтра
+.filter{ $0 != -1 }
+
+var s = "a(bc)de"
+var arr = Array(s.characters)
+print(arr.filter{ $0 != "(" && $0 != ")" })
+//
+
+
+
+
+

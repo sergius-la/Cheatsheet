@@ -1,0 +1,22 @@
+-- IN --
+SELECT FIRST_NAME, LAST_NAME, department_id	 
+FROM employees
+WHERE LAST_NAME LIKE 'King'
+AND department_id IN (30, 90)	
+--
+
+
+
+
+-- Between --
+SELECT FIRST_NAME, LAST_NAME, department_id	 
+FROM employees
+WHERE department_id BETWEEN 30 AND 110
+
+
+
+SELECT FIRST_NAME, LAST_NAME, HIRE_DATE
+FROM employees
+WHERE HIRE_DATE BETWEEN '01/01/2005' AND '01/01/2008'
+__
+ 

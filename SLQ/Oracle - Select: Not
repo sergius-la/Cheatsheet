@@ -1,0 +1,24 @@
+-- NOT Syntax--
+
+
+SELECT "column_name1", "column_name2", ...
+FROM "table_name"
+WHERE NOT "column_name" =/>/< "condition" 
+WHERE "column_name" != "condition"
+
+
+--
+SELECT FIRST_NAME, LAST_NAME, DEPARTMENT_ID, COMMISSION_PCT
+FROM employees
+WHERE NOT COMMISSION_PCT IS NULL
+
+
+SELECT FIRST_NAME, LAST_NAME, DEPARTMENT_ID, COMMISSION_PCT
+FROM employees
+WHERE NOT COMMISSION_PCT = 0.3
+
+
+SELECT FIRST_NAME, LAST_NAME, DEPARTMENT_ID, COMMISSION_PCT
+FROM employees
+WHERE COMMISSION_PCT != 0.3
+--

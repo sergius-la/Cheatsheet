@@ -1,0 +1,14 @@
+// Declaring arrays
+var myArray = ["ace","king", "queen","jack"]
+var arrayTwo = [String] ()
+
+
+
+// Создание Массива с одинаковым числом заданное число раз
+var board = [Int](repeating: 1, count: 4)
+print(board) // [1, 1, 1, 1] 
+
+
+
+// Создание массива от числа до числа
+let intArray: [Int] = Array(min...max)

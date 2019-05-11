@@ -1,0 +1,187 @@
+-- Data Select Language --
+
+5 SELECT [ALL|DISTINCT] column_name1, column_name2, ... 
+1 FROM <table> [table_name1, table_name2 ...]
+2 WHERE condition
+3 GROUP BY <column-list>
+4 HAVING condition
+6 ORDER BY <column-list> [ASC | DESC]
+
+
+WHERE allows us to specify a condition as:   
+Comparison:  =, >, <, >=, <=
+WHERE DEPARTMENT_ID > 80
+WHERE DEPARTMENT_ID <> 80
+WHERE DEPARTMENT_ID <= 80
+Negative Conditions:  <> (Not equal), NOT, etc
+WHERE DEPARTMENT_ID <> 80
+WHERE NOT DEPARTMENT_ID = 80  
+
+
+
+
+WHERE let us specify more complicated operators: 
+IN 
+BETWEEN
+LIKE
+IS NULL / IS NOT NULL
+
+
+-- Aggregate Functions --
+COUNT() 	- Returns the number of rows
+MAX() 	- Returns the largest value
+MIN() 	- Returns the smallest value
+FIRST() 	- Returns the first value
+LAST() 	- Returns the last value
+
+Work ONLY with numeric VALUES
+SUM() 	- Returns the sum
+AVG() 	- Returns the average value
+
+WHERE DEPARTMENT_ID IN (80, 90, 100)
+WHERE DEPARTMENT_ID LIKE “LIN%”
+WHERE DEPARTMENT_ID IS NOT NULL
+
+
+
+
+
+
+-- Select Whole table
+SELECT * FROM table_name;
+
+
+
+
+SELECT - extracts data from a database
+AS - Создает псевдоним
+WHERE - Condition -- Int/'String'
+
+--Выдать только определенное количево --
+-- До групповой операции --
+WHERE ROWNUM < 11 -- Выдать 10 писать на одно лично больше чем надо выдать
+--
+
+
+
+
+
+
+-- Combining Examples --
+SELECT * FROM table_name
+WHERE NOT column_name1='value1' AND NOT column_name2='value2';
+
+SELECT * FROM table_name
+WHERE column_name1='value' AND (column_name2='value1' OR column_name2='value2');
+--
+
+--IS NULL Syntax --
+SELECT column_name
+FROM table_name
+WHERE column_name IS NULL; 
+-- 
+
+
+
+-- Select a specific columns from table
+SELECT column_name1, column_name2,
+FROM table_name;
+
+
+-- Select only an unique value
+SELECT DISTINCT column_name
+FROM table_name;
+
+-- Count unique value
+SELECT COUNT(DISTINCT column_name)
+FROM table_name;
+
+-- ORDER BY, ASC - Ascendant, DESC - Descending --
+SELECT column_name1, column_name2
+FROM table_name
+ORDER BY column_name1, column_name2
+
+SELECT * FROM table_name
+ORDER BY column_name1 ASC, column_name2 DESC; 
+--
+
+-- Выбор ROW при ячейки совпадении значений
+SELECT * FROM table_name;
+WHERE column_name='value'
+
+-- AS Создание псевдонима
+SELECT COUNT(*) AS Псевдоним
+FROM (SELECT DISTINCT column_name FROM table_name);
+
+-- Select MAX выдаст максимальное значение в колонке; MAX () + 1; MAX () - 1, С Int можно проводить математические операции  
+SELECT MAX (PersonID) FROM Persons
+
+
+
+
+
+
+
+-- NESTED OR SUBQUERY
+SELECT First_Name, Last_Name, DEPARTMENT_ID
+FROM Employees
+WHERE DEPARTMENT_ID = (SELECT DEPARTMENT_ID FROM DEPARTMENTS WHERE DEPARTMENT_NAME='IT')
+--
+
+
+-- Inner Join (defalt)
+
+-- 2 Tables
+SELECT Employees.First_Name, Employees.Last_Name, DEPARTMENTS.DEPARTMENT_NAME
+FROM Employees, DEPARTMENTS
+WHERE Employees.DEPARTMENT_ID = DEPARTMENTS.DEPARTMENT_ID
+
+ 
+-- 3 Tables
+SELECT e.First_Name, d.DEPARTMENT_NAME, d.DEPARTMENT_ID,  l.CITY, l.LOCATION_ID
+FROM Employees e, DEPARTMENTS d, LOCATIONS l
+WHERE e.DEPARTMENT_ID = d.DEPARTMENT_ID 
+AND l.LOCATION_ID = d.LOCATION_ID
+AND NOT l.COUNTRY_ID = 'US'
+ORDER BY e.First_Name
+-- Join
+
+
+-- [INNER] JOIN
+SELECT e.Last_Name, e.First_Name, d.DEPARTMENT_NAME, d.DEPARTMENT_ID
+FROM Employees e
+INNER JOIN DEPARTMENTS d
+ON e.DEPARTMENT_ID = d.DEPARTMENT_ID
+WHERE d.DEPARTMENT_NAME = 'Shipping'
+-- [INNER] JOIN
+
+
+-- [OUTER] JOIN
+
+-- [OUTER] JOIN LEFT
+SELECT e.Last_Name, e.First_Name, d.DEPARTMENT_NAME, d.DEPARTMENT_ID
+FROM Employees e
+LEFT JOIN DEPARTMENTS d
+ON e.DEPARTMENT_ID = d.DEPARTMENT_ID
+
+-- [OUTER] JOIN RIGHT
+SELECT e.Last_Name, e.First_Name, d.DEPARTMENT_NAME, d.DEPARTMENT_ID
+FROM Employees e
+RIGHT JOIN DEPARTMENTS d
+ON e.DEPARTMENT_ID = d.DEPARTMENT_ID
+
+-- [OUTER] JOIN FULL
+SELECT e.Last_Name, e.First_Name, d.DEPARTMENT_NAME, d.DEPARTMENT_ID
+FROM Employees e
+FULL JOIN DEPARTMENTS d
+ON e.DEPARTMENT_ID = d.DEPARTMENT_ID
+-- [OUTER] JOIN
+
+
+-- UNION / UNION  ALL
+SELECT Last_Name
+FROM Employees 
+UNION  ALL
+SELECT DEPARTMENT_NAME
+FROM DEPARTMENTS 
+--
