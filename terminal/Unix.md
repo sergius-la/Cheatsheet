@@ -11,6 +11,12 @@
 | New Window | <kbd>⌘ Command</kbd> + <kbd>N</kbd> |  
 | New Tab | <kbd>⌘ Command</kbd> + <kbd>T | 
 
+[_Stack Overflow: Reload bash_profile_](https://stackoverflow.com/questions/4608187/how-to-reload-bash-profile-from-the-command-line)
+
+```shell
+source ~/.bash_profile
+```
+
 ***
 
 #### &&

@@ -28,8 +28,10 @@
 
 # <img src="/imgs/terminal.png" width="24" height="24"> Unix / Linux
 
-- [__Commands__](/Unix.md)
-- [__vim__](/vim.md)
+- [__Commands__](/terminal/Unix.md)
+- [__vim__](/terminal/vim.md)
+- [__alias__](/terminal/alias.md)
+    - [_[RU] YouTube: Создание псевдонимов команд (alias)_](https://www.youtube.com/watch?v=HvwOtqEheZ4)
 
 ***
 
