@@ -25,13 +25,8 @@
 
 # <img src="/imgs/swift.png" width="24" height="24"> Swift
 
-- [_Swift docs_](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
-- [_Swift docs: enum_](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html)
-- [_Swift docs: Structures and Classes_](https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html)
-- [__Swift Notes__](/swift.md)
-    - [__XCTest__](Swift/XCTest/XCTest.md)
-        - [__XCUITest__](Swift/XCTest/XCUITest/XCUitest.md)
-        - [_UI Testing Cheat Sheet and Examples_](http://masilotti.com/ui-testing-cheat-sheet/)
+- [__Swift Notes__](https://github.com/sergius-la/Swift)
+- [_Xcode_](https://itunes.apple.com/us/app/xcode/id497799835)
 
 ***
 

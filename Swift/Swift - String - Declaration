@@ -1,4 +1,0 @@
-
-//
-let string = String(repeating: "*", count: 4)
-//****

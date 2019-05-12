@@ -1,4 +1,0 @@
-// Нахождение общих значений для Set
-set_name.intersection(set_name)
-Set(s2c.keys).intersection(Set(s1c.keys))
-//
