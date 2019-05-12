@@ -1,4 +1,5 @@
 <!-- [_Stack Overflow: _]() -->
+<!-- [_GitHub: _]() -->
 
 # <img src="/imgs/py_icon.png" width="24" height="24"> Python
 
@@ -24,7 +25,10 @@
 
 # <img src="/imgs/swift.png" width="24" height="24"> Swift
 
-- [__Java Notes__](/swift.md)
+- [_Swift docs_](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
+- [__Swift Notes__](/swift.md)
+    - [__XCTest__](Swift/XCTest/XCTest.md)
+        - [__XCUITest__](Swift/XCTest/XCUITest/XCUitest.md)
 
 ***
 
