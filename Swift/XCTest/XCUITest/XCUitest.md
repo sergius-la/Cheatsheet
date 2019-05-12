@@ -34,18 +34,32 @@ class CalculatorUITests: XCTestCase {
 - App Store: `com.apple.AppStore`
 - Safari: `com.apple.mobilesafari`
 
+## XCUIElementQuery
+
+Methods
+
+Get element by Accessibility Identifier
+
+```swift
+let element = app.buttons.matching(.button, identifier: "bt7").element
+let element = app.buttons.containing(.button, identifier: "bt8").element
+```
+
 ## XCUIElements
 
 - app.buttons
 - app.staticTexts
 - app.switches
-- tables.cells.staticTexts
+- app.tables.cells.staticTexts
+- app.textFields
+- app.alerts
 
 ## XCUIElement methods
 
 - exists -> boolean
 - isSelected -> boolean
 - tap()
+- .typeText(<"Text">)
 
 #### Buttons
 

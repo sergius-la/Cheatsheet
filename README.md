@@ -26,9 +26,12 @@
 # <img src="/imgs/swift.png" width="24" height="24"> Swift
 
 - [_Swift docs_](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
+- [_Swift docs: enum_](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html)
+- [_Swift docs: Structures and Classes_](https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html)
 - [__Swift Notes__](/swift.md)
     - [__XCTest__](Swift/XCTest/XCTest.md)
         - [__XCUITest__](Swift/XCTest/XCUITest/XCUitest.md)
+        - [_UI Testing Cheat Sheet and Examples_](http://masilotti.com/ui-testing-cheat-sheet/)
 
 ***
 
@@ -74,3 +77,9 @@
 # <img src="/imgs/study_res.png" width="24" height="24"> Study Resources
 
 [Study resources links](/Study_Resources.md)
+
+*** 
+
+# <img src="/imgs/markdown.png" width="24" height="24"> Markdown
+
+[_Markdown_](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
