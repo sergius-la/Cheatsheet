@@ -36,14 +36,26 @@ class CalculatorUITests: XCTestCase {
 
 ## XCUIElementQuery
 
-Methods
+- Element type
+    - Button, table, menu, etc
+        - Buttons
+        ```swift
+        let app = XCUIApplication()
+        app.buttons[<"label">]
 
-Get element by Accessibility Identifier
-
-```swift
-let element = app.buttons.matching(.button, identifier: "bt7").element
-let element = app.buttons.containing(.button, identifier: "bt8").element
-```
+        // Find all buttons
+        let app = XCUIApplication()
+        let buttons = app.buttons.allElementsBoundByIndex
+        ```
+- Identifiers
+    - Accessibility Identifier, label, title, etc
+    ```swift
+    // by Accessibility Identifier
+    let element = app.buttons.matching(.button, identifier: "bt7").element
+    let element = app.buttons.containing(.button, identifier: "bt8").element
+    ```
+- Predicates
+    - Value, partial matching, etc
 
 ## XCUIElements
 
@@ -60,17 +72,3 @@ let element = app.buttons.containing(.button, identifier: "bt8").element
 - isSelected -> boolean
 - tap()
 - .typeText(<"Text">)
-
-#### Buttons
-
-Get button by label
-```swift
-let app = XCUIApplication()
-app.buttons[<"label">]
-```
-Find all buttons
-
-```swift
-let app = XCUIApplication()
-let buttons = app.buttons.allElementsBoundByIndex
-```
