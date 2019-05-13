@@ -78,3 +78,13 @@
 # <img src="/imgs/markdown.png" width="24" height="24"> Markdown
 
 [_Markdown_](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+*** 
+
+# <img src="/imgs/maps.png" width="24" height="24"> Google Maps API
+
+Add Google map place in iframe. `Find place at Google map -> Share -> Embed a map`
+
+- [_Place ID Finder_](https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder)
+- [_Google Map - Hello World_](https://developers.google.com/maps/documentation/javascript/examples/map-simple)
+
