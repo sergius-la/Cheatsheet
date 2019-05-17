@@ -4,6 +4,7 @@
 # <img src="/imgs/py_icon.png" width="24" height="24"> Python
 
 - [__Python Notes__](https://github.com/sergius-la/Python)
+    - [__Django Notes__](https://github.com/sergius-la/Python#-django)
 - [_PyCharm_](https://www.jetbrains.com/pycharm/)
 
 ***
