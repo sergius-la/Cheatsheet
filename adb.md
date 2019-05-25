@@ -126,10 +126,15 @@ Inspect network diagnostics<br>
 
 ## Processes
 
+[_PID of the particular process_](https://stackoverflow.com/questions/21319883/adb-find-pid-from-the-adb-shell)
+
 #### pidof
 
-[PID of the particular process](https://stackoverflow.com/questions/21319883/adb-find-pid-from-the-adb-shell) <br>
 `adb shell pidof <package.name>`
+
+#### ps
+
+`adb shell ps | grep <package.name> | cut -d ' ' -f 5`
 
 ***
 
