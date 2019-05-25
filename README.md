@@ -38,6 +38,7 @@
 - [__alias__](/terminal/alias.md)
     - [_[RU] YouTube: Создание псевдонимов команд (alias)_](https://www.youtube.com/watch?v=HvwOtqEheZ4)
     - [_Stack Overflow: Alias takes a parameter_](https://stackoverflow.com/questions/7131670/make-a-bash-alias-that-takes-a-parameter)
+- [__macOS__](/macOS.md)
 
 ***
 
