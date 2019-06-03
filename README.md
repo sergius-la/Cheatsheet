@@ -90,3 +90,20 @@ Add Google map place in iframe. `Find place at Google map -> Share -> Embed a ma
 - [_Place ID Finder_](https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder)
 - [_Google Map - Hello World_](https://developers.google.com/maps/documentation/javascript/examples/map-simple)
 
+***
+
+# Apache Server
+
+Test config
+
+`apache2ctl configtest`
+
+Set Config
+
+`sudo a2ensite <file>.conf`
+
+`sudo service apache2 restart`
+
+Read log
+
+`sudo tail -100 /var/log/apache2/error.log`
