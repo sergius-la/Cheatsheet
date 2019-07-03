@@ -66,6 +66,13 @@ Reboots into bootloade. <br>
 
 ***
 
+## Screen
+
+[Set screen / display brightness](https://github.com/Genymobile/scrcpy/issues/101) <br>
+`adb shell settings put system screen_brightness (0 to 255)`
+
+***
+
 ## Bluetooth
 
 Get infromation about Bluetooth <br> 
