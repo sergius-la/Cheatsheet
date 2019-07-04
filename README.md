@@ -52,8 +52,8 @@
 
 # <img src="/imgs/adb.jpeg" width="24" height="24"> Android Debuging Bridge (adb)
 
-- [__adb - commands__](/adb.md)
-- [__adb - KeyEvent__](/adb%20-%20KeyEvent.md)
+- [__adb - commands__](/adb/adb.md)
+- [__adb - KeyEvent__](/adb/adb%20-%20KeyEvent.md)
 
 ***
 
