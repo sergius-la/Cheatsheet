@@ -1,5 +1,10 @@
 # Git
 
+- Configurations
+- Staging
+- Commit
+- Branch
+
 ## Configuration
 
 #### Config
