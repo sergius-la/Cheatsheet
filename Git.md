@@ -115,11 +115,10 @@ List, create, or delete branches. <br>
 https://git-scm.com/docs/git-branch <br>
 `branch`
 
-> Create and push new branch to a remote Git branch <br>
+> [Create a remote branch](https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch) <br>
 git checkout -b <feature_branch_name> <br>
 git push -u <br>
 git push --set-upstream origin <br> <feature_branch_name>
-https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch
 
 > Pull / Copy a remote branch
 https://gist.github.com/fabianmoronzirfas/4023446 <br>
