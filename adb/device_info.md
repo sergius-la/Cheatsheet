@@ -12,6 +12,11 @@ List of Services on the device <br>
 Screen resolution <br> 
 `adb shell dumpsys display | grep density`
 
+#### `dumpsys window`
+
+> Package Name & Activity Name from current window. <br>
+`adb shell dumpsys window windows | grep -E 'mCurrentFocus'`
+
 #### Bluetooth
 
 Get infromation about Bluetooth <br> 
@@ -93,3 +98,12 @@ Dump logs from buffer <br>
 | adb logcat *:V | Verbose logs only |
 | adb logcat *:D | Debugging logs only |
 | adb logcat *:W | Warning logs only |
+
+***
+
+## Networking
+
+### IP Adress
+
+Device IP address <br>
+`adb shell ip addr`

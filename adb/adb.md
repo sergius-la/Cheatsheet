@@ -20,6 +20,7 @@ PyPackage - [ADB Commands](https://github.com/sergius-la/adb)
 
 - __ADB:__
   - `devices`
+  - `Monkey Test: Device/App`
 - __[Device info:](/adb/device_info.md)__
   - `dumpsys`
     - Bluetooth
@@ -27,10 +28,14 @@ PyPackage - [ADB Commands](https://github.com/sergius-la/adb)
   - Memory Usage
   - Process ID
   - `Logcat`
+  - `current activity/package`
+  - Networking
+    - `ip addr`
 - __[Device manipulations:](/adb/device_manipulations.md)__
   - `reboot`
   - `screen / brightness`
   - Bluetooth on/off
+  - Screenshot
 - __[User actions:](/adb/user_actions.md)__
   - `input keyevent <event_num>`
   - `input swipe`
@@ -40,16 +45,17 @@ PyPackage - [ADB Commands](https://github.com/sergius-la/adb)
   - `pm` (package manager)
   - `install`
   - `uninstall`
-<!-- - __Files:__
-  - pull(path_from, path_to)
-  - TODO: Push File
-- __Package info:__
-  - get_list_packages()
-  - get_packahe_version(package)
-- __Layout:__
+- __[Package info:](/adb/package_info.md)__
+  - `dumpsys package`
+- __[Files:]()__
+  - `pull`
+  - `push`
+  <!-- - get_list_packages() -->
+  <!-- - TODO: Push File
+<!-- - __Layout:__
   - dump_layout()
   - TODO: Save layout
-  - TODO: Search Element -->
+  - TODO: Search Element --> -->
 
 ***
 
@@ -93,12 +99,6 @@ List of Process on the device <br>
 
 ## Package / Application Information
 
-> Package Name & Activity Name from current window. <br>
-`adb shell dumpsys window windows | grep -E 'mCurrentFocus'`
-
-Package version. <br>
-`adb shell dumpsys package <com.package.name> | grep version`
-
 ***
 
 <!-- Package / Application Information -->
@@ -106,9 +106,6 @@ Package version. <br>
 ### Networking
 
 netstat -- Show active interten conection
-
-Device IP address 
-`adb shell ip addr`
 
 Open the Port (Common use: 5555 or 5554) <br>
 ``` adb tcpip "port_number" ```
@@ -123,37 +120,6 @@ Connecting device remote (The port must be open) <br>
 adb shell
 
 ***
-
-
-#### Push
-
-`adb push <path>/<filename> /<path_destination>` <br> 
-`adb push ~/Desktop/123.txt /sdcard`
-
-***
-
-#### Pull 
-
-`adb -s __serial number__ pull /__device_directory__/__file_name__ /__directory_name__` <br> 
-`adb -s emulator-5554 pull /sdcard/1234.txt .`
-
-***
-
-#### Make a Screenshot
-
-`adb -s "serial number" shell screencap /"device_directory"/"file_name"` <br>
-`adb -s emulator-5554 shell screencap /sdcard/sc2.png`
-
-
-***
-
-#### Screenshot & Copy to Desktop
-`adb shell  screencap /sdcard/"3.png" | adb  pull /sdcard/"3.png" /Users/sergey/Desktop`
-
-`adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > screen.png` <br>
-https://blog.shvetsov.com/2013/02/grab-android-screenshot-to-computer-via.html <br>
-***
-
 
 #### Make a Screenrecord
 -bit

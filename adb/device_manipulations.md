@@ -21,3 +21,13 @@ Reboots into bootloade. <br>
 
 Bluetooth turn off (need permition) <br> 
 `adb shell service call bluetooth_manager 8`
+
+***
+
+#### Make a Screenshot
+
+> [Screenshot to computer](https://blog.shvetsov.com/2013/02/grab-android-screenshot-to-computer-via.html) <br>
+> `adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > screen.png`
+
+`adb shell screencap <path_save_device>` <br>
+`adb shell screencap /sdcard/sc2.png`
