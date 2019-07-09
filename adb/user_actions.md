@@ -14,7 +14,7 @@ Tap X, Y position. <br>
 Swipe by coordinates X1 Y1 X2 Y2. <br> 
 `adb shell input swipe <X1> <Y1> <X2> <Y2>`
 
-[Send text](https://stackoverflow.com/questions/7789826/adb-shell-input-events) <br>
+[_Send text_](https://stackoverflow.com/questions/7789826/adb-shell-input-events) <br>
 `%s` - Space <br>
 `adb shell input text <"Hello%sWorld">`
 
