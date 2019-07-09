@@ -39,12 +39,13 @@
     - [_[RU] YouTube: Создание псевдонимов команд (alias)_](https://www.youtube.com/watch?v=HvwOtqEheZ4)
     - [_Stack Overflow: Alias takes a parameter_](https://stackoverflow.com/questions/7131670/make-a-bash-alias-that-takes-a-parameter)
 - [__macOS__](/macOS.md)
+  - ZSH
 
 ***
 
 # <img src="/imgs/git.png" width="24" height="24"> Git
 
-- [__Git commands__](/Git.md)
+- [__`Git commands`__](/Git.md)
 - Resources:
     - [_Most commonly used git tips and tricks_](https://github.com/git-tips/tips)
 
@@ -52,7 +53,7 @@
 
 # <img src="/imgs/adb.jpeg" width="24" height="24"> Android Debuging Bridge (adb)
 
-- [__adb - commands__](/adb/adb.md)
+- [__`adb - commands`__](/adb/adb.md)
 - [__adb - KeyEvent__](/adb/adb%20-%20KeyEvent.md)
 
 ***
