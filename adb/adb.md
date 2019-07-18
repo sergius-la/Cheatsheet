@@ -31,12 +31,14 @@ PyPackage - [ADB Commands](https://github.com/sergius-la/adb)
   - `current activity/package`
   - Networking
     - `ip addr`
+  - `wm (window manager)`
 - __[Device manipulations:](/adb/device_manipulations.md)__
   - `reboot`
   - `screen / brightness`
   - Bluetooth on/off
   - Screenshot
 - __[User actions:](/adb/user_actions.md)__
+  - TODO: Move to Device Manipulations
   - `input keyevent <event_num>`
   - `input swipe`
   - `input tap`

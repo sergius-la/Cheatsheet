@@ -22,6 +22,9 @@ Reboots into bootloade. <br>
 Bluetooth turn off (need permition) <br> 
 `adb shell service call bluetooth_manager 8`
 
+Bluetooth turn on (need permition) <br> 
+`adb shell service call bluetooth_manager 6`
+
 ***
 
 #### Make a Screenshot

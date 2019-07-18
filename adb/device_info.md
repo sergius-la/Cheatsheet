@@ -107,3 +107,12 @@ Dump logs from buffer <br>
 
 Device IP address <br>
 `adb shell ip addr`
+
+***
+
+## Display
+
+### ww
+
+Get Display size <br>
+`adb shell wm size`
