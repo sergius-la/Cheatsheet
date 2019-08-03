@@ -42,7 +42,6 @@
   - ZSH
   - `brew install tree`
   - iTerm
-    - <script src="https://gist.github.com/sergius-la/b5351fff503e20baf02d6f4a60d30c94.js"></script>
 
 ***
 
