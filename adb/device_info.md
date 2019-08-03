@@ -103,7 +103,7 @@ Dump logs from buffer <br>
 
 ## Networking
 
-### IP Adress
+#### `ip addr`
 
 Device IP address <br>
 `adb shell ip addr`
@@ -112,7 +112,18 @@ Device IP address <br>
 
 ## Display
 
-### ww
+#### `wm`
 
 Get Display size <br>
 `adb shell wm size`
+
+***
+
+Device State
+
+[_Stack Overflow: Check device Lock / Unlock_](https://stackoverflow.com/questions/35275828/is-there-a-way-to-check-if-android-device-screen-is-locked-via-adb)
+
+Device lock check
+`adb shell dumpsys power | grep "mShowingLockscreen"`
+- mShowingLockscreen - Lock Screen
+- mDreamingLockscreen - Lock Screen, Display On

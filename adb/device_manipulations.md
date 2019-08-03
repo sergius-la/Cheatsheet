@@ -34,3 +34,10 @@ Bluetooth turn on (need permition) <br>
 
 `adb shell screencap <path_save_device>` <br>
 `adb shell screencap /sdcard/sc2.png`
+
+***
+
+#### `KeyEvent`
+
+[_Android docs: KeyEvent_](https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_POWER)
+
