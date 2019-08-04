@@ -262,6 +262,20 @@ mkdir -p - Make a full path
 
 nano ~/.bash_profile
 
+***
+
+#### `grep`
+
+grep --invert-match
+
+* -e pattern.
+* -i: Ignore uppercase vs. lowercase.
+* -v: Invert match.
+* -c: Output count of matching lines only.
+* -l: Output matching files only.
+* -n: Precede each matching line with a line number.
+* -b: A historical curiosity: precede each matching line with a block number.
+
 
 
 
