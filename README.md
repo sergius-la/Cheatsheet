@@ -1,33 +1,10 @@
 <!-- [_Stack Overflow: _]() -->
 <!-- [_GitHub: _]() -->
 
-# <img src="/imgs/py_icon.png" width="24" height="24"> Python
-
-- [__Python Notes__](https://github.com/sergius-la/Python)
-    - [__Django Notes__](https://github.com/sergius-la/Python#-django)
-- [_PyCharm_](https://www.jetbrains.com/pycharm/)
-
-***
-
 # <img src="/imgs/sql.png" width="24" height="24"> SQL
 
 - [_PostgreSQL_](https://www.postgresql.org/docs/)
 - [_SQLite_](https://www.sqlite.org/docs.html)
-- [_DataGrip_](https://www.jetbrains.com/datagrip/)
-
-***
-
-# <img src="/imgs/java.png" width="24" height="24"> Java
-
-- [__Java Notes__](https://github.com/sergius-la/Java)
-- [_IntelliJ IDEA_](https://www.jetbrains.com/idea/)
-
-***
-
-# <img src="/imgs/swift.png" width="24" height="24"> Swift
-
-- [__Swift Notes__](https://github.com/sergius-la/Swift)
-- [_Xcode_](https://itunes.apple.com/us/app/xcode/id497799835)
 
 ***
 
@@ -84,6 +61,9 @@
 
 - [IntelliJ IDEA](/IDEA_shortcuts.md)
 - [Visual Studio Code](/VS_Code.md)
+- [_PyCharm_](https://www.jetbrains.com/pycharm/)
+- [_DataGrip_](https://www.jetbrains.com/datagrip/)
+- [_Xcode_](https://itunes.apple.com/us/app/xcode/id497799835)
                     
 ***
 
