@@ -43,6 +43,26 @@
   - `brew install tree`
   - iTerm
 
+## Terminal
+
+- [_Oh My Zsh_](https://ohmyz.sh)
+  - ```source ~/.bash_profile``` <br> Add to `~/.zshrc`
+  - Style:
+    - [_powerlevel9k_](https://github.com/Powerlevel9k/powerlevel9k)
+    - [_powerlevel10k_](https://github.com/romkatv/powerlevel10k)
+    - [_Nerd Fonts_](https://github.com/ryanoasis/nerd-fonts)
+    - `DEFAULT_USER=$(whoami)` <br> Remove hostname
+    - Style example
+        ```sh
+        POWERLEVEL9K_MODE='nerdfont-complete'
+        # ZSH_THEME="powerlevel9k/powerlevel9k"
+        ZSH_THEME=powerlevel10k/powerlevel10k
+        DEFAULT_USER=$(whoami)
+        ```
+  - Plugins:
+    - [_zsh-syntax-highlighting_](https://github.com/zsh-users/zsh-syntax-highlighting)
+    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)  
+
 ***
 
 # <img src="/imgs/git.png" width="24" height="24"> Git

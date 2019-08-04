@@ -1,5 +1,7 @@
 # <img src="/imgs/vs_code.jpg" width="24" height="24"> Visual Studio Code
 
+__`code`__ - [Launching from the command line](https://code.visualstudio.com/docs/setup/mac)
+
 ## Extensions
 
 - Programming Languages:
