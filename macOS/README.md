@@ -1,0 +1,5 @@
+# macOS
+
+# Apps
+
+- iTerm2

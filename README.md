@@ -42,6 +42,13 @@
 
 ***
 
+# [macOS](/macOS/README.md)
+
+- App
+<!-- - Settings -->
+
+***
+
 # <img src="/imgs/git.png" width="24" height="24"> Git
 
 - [__`Git commands`__](/Git.md)
