@@ -8,9 +8,11 @@ Android SDK debugging tools:
 - uiautomatorviewer -- Android Automation Viewer
 - monitor -- Android Monitor
 
-Android SDK path:
-- Windows: `C:\Users\<username>\AppData\Local\Android\sdk`
-- Mac: `/Users/<username>/Library/Android/sdk`
+ADB path:
+```shell
+ANDROID_SDK=~/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools/bin
+```
 
 PyPackage - [ADB Commands](https://github.com/sergius-la/adb)
 

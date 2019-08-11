@@ -51,7 +51,7 @@
 
 # <img src="/imgs/git.png" width="24" height="24"> Git
 
-- [__`Git commands`__](/Git.md)
+- [__`Git commands`__](/git/README.md)
 - Resources:
     - [_Most commonly used git tips and tricks_](https://github.com/git-tips/tips)
 
