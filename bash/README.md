@@ -22,7 +22,7 @@ echo $PY
 
 Simple flag check
 ```bash
-mya() {
+check() {
     if [ "$1" != "-one" ]; then
         echo "Not One"
     else 
