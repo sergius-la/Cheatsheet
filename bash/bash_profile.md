@@ -1,8 +1,8 @@
 # Bash Profile
 
-## Alias
+## Git Alias
 
-`Push all`
+Push all - `pha <commit_message>`
 
 ```bash
 pha() {
@@ -12,7 +12,7 @@ pha() {
 }
 ```
 
-`Push Master` from Local Dev (track master)
+Push Master from Local Dev (track master) - `push-master`
 
 ```bash
 push-master() {
