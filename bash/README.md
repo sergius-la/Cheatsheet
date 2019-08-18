@@ -2,10 +2,21 @@
 
 ### [`Bash Profile`](/bash/bash_profile.md)
 
+Hello World
+
 ```bash
 VAR="Hello World" 
 echo $VAR
 ```
+
+Print Environment variable
+
+```bash
+echo $<ENV_VARIABLE>
+echo $PATH
+echo $HOME
+```
+
 
 Run script:
 ```shell
