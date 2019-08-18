@@ -1,5 +1,7 @@
 # <img src="https://github.com/sergius-la/icon_links/blob/master/img/bash.png" width="28" height="28"> Bash
 
+### [`Bash Profile`](/bash/bash_profile.md)
+
 ```bash
 VAR="Hello World" 
 echo $VAR
