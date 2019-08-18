@@ -11,10 +11,10 @@ echo $VAR
 
 Print Environment variable
 
-```bash
-echo $<ENV_VARIABLE>
-echo $PATH
-echo $HOME
+```shell
+$ echo $<ENV_VARIABLE>
+$ echo $PATH
+$ echo $HOME
 ```
 
 
