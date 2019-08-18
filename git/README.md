@@ -238,3 +238,6 @@ https://git-scm.com/docs/git-pull <br>
 `git pull`
 
 ***
+
+- Resources:
+  - [_Most commonly used git tips and tricks_](https://github.com/git-tips/tips)

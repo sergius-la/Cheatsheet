@@ -49,13 +49,7 @@
 
 ***
 
-# <img src="/imgs/git.png" width="24" height="24"> Git
-
-- [__`Git commands`__](/git/README.md)
-- Resources:
-    - [_Most commonly used git tips and tricks_](https://github.com/git-tips/tips)
-
-***
+# <img src="/imgs/git.png" width="24" height="24"> [`Git`](/git/README.md)
 
 # <img src="/imgs/adb.jpeg" width="24" height="24"> Android Debuging Bridge (adb)
 
@@ -117,3 +111,7 @@ Set Config
 Read log
 
 `sudo tail -100 /var/log/apache2/error.log`
+
+***
+
+# [`Bash`](bash/README.md)
