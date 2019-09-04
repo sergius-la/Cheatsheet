@@ -44,14 +44,14 @@ PyPackage - [ADB Commands](https://github.com/sergius-la/adb)
   - `input keyevent <event_num>`
   - `input swipe`
   - `input tap`
-- __[Package manipulations:](adb/package_manipulations.md)__
+- __[Package manipulations:](/adb/package_manipulations.md)__
   - `am` (activity manager)
   - `pm` (package manager)
   - `install`
   - `uninstall`
 - __[Package info:](/adb/package_info.md)__
   - `dumpsys package`
-- __[Files:]()__
+- __[Files:](/adb/files.md)__
   - `pull`
   - `push`
   <!-- - get_list_packages() -->
