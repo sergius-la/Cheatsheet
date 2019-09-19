@@ -39,11 +39,10 @@ PyPackage - [ADB Commands](https://github.com/sergius-la/adb)
   - `screen / brightness`
   - Bluetooth on/off
   - Screenshot
-- __[User actions:](/adb/user_actions.md)__
-  - TODO: Move to Device Manipulations
-  - `input keyevent <event_num>`
-  - `input swipe`
-  - `input tap`
+  - `input:`
+    - `input keyevent <event_num>`
+    - `input swipe`
+    - `input tap`
 - __[Package manipulations:](/adb/package_manipulations.md)__
   - `am` (activity manager)
   - `pm` (package manager)
