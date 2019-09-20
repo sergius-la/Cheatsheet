@@ -32,6 +32,7 @@
     - Style example
         ```sh
         POWERLEVEL9K_MODE='nerdfont-complete'
+        POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
         # ZSH_THEME="powerlevel9k/powerlevel9k"
         ZSH_THEME=powerlevel10k/powerlevel10k
         DEFAULT_USER=$(whoami)
