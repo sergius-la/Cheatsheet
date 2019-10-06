@@ -4,7 +4,9 @@ Record changes to the repository. <br>
 https://git-scm.com/docs/git-commit <br>
 `git commit`
 
-> [_Undo the last commit_](https://www.git-tower.com/learn/git/faq/undo-last-commit) <br>
+### reset commit
+
+[_Undo the last commit_](https://www.git-tower.com/learn/git/faq/undo-last-commit) <br>
 `git reset --soft HEAD~1`
 
 >Add all modified and deleted, use msg for commit message. <br>

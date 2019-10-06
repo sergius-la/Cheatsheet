@@ -1,11 +1,11 @@
 # Git
 
 - __[Configurations:](/git/config.md)__
-  - config
-- Staging
-- __[Commit:](/git/commit.md)__
+  - `config`
+- __[Staging:](/git/stage.md)__
+  - `commit:` reset commit, edit commit
 - __[Branching:](/git/branching.md)__
-  - branch
+  - `branch`
 
 ***
 
