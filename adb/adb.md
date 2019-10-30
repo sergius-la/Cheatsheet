@@ -18,6 +18,12 @@ PyPackage - [ADB Commands](https://github.com/sergius-la/adb)
 
 ***
 
+## Scripts
+
+- [adb+ - execute command for multiple devices]()
+
+***
+
 ## Commands
 
 - __ADB:__
