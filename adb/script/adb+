@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Execute same comand for all connected devices
+# Stackoverflow - https://stackoverflow.com/questions/17882474/running-adb-commands-on-all-connected-devices
+
 adb devices | while read line
 do
     if [ ! "$line" = "" ] && [ `echo $line | awk '{print $2}'` = "device" ]
