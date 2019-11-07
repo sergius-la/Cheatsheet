@@ -1,15 +1,35 @@
 ## Branching
 
-### Branch
+## Remote
 
-List, create, or delete branches. <br>
-https://git-scm.com/docs/git-branch <br>
-`branch`
+[__Create a remote branch__](https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch) <br>
+```shell
+git checkout -b <new_branch_name>
+git push --set-upstream origin <new_branch_name>
+```
 
-> [Create a remote branch](https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch) <br>
-git checkout -b <feature_branch_name> <br>
-git push -u <br>
-git push --set-upstream origin <br> <feature_branch_name>
+__Delete a remote branch__
+```shell
+git push origin :branch_to_be_deleted
+```
+
+***
+
+## Local
+
+[__Rename branch__](https://www.notion.so/Git-a2117392da1d450bb04c1205e6fbd140#9ce31bcf67b24ef7a86ada1f60a064ed)
+```shell
+# Other branch
+git branch -m <oldname> <newname>
+
+# Current branch
+git branch -m <newname>
+git branch -M <newname>
+```
+
+***
+
+#### `branch`
 
 > Pull / Copy a remote branch
 https://gist.github.com/fabianmoronzirfas/4023446 <br>

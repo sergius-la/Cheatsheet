@@ -4,6 +4,10 @@ Record changes to the repository. <br>
 https://git-scm.com/docs/git-commit <br>
 `git commit`
 
+#### `cherry-pick`
+
+[Git cherry-pick a file](https://stackoverflow.com/questions/5717026/how-to-git-cherry-pick-only-changes-to-certain-files)
+
 ### reset commit
 
 [_Undo the last commit_](https://www.git-tower.com/learn/git/faq/undo-last-commit) <br>

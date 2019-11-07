@@ -3,9 +3,10 @@
 - __[Configurations:](/git/config.md)__
   - `config`
 - __[Staging:](/git/stage.md)__
-  - `commit:` reset commit, edit commit
+  - `commit:` reset commit, edit commit, squash
 - __[Branching:](/git/branching.md)__
   - `branch`
+  - remote
 
 ***
 
