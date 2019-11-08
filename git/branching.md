@@ -2,7 +2,7 @@
 
 ## Remote
 
-[__Create a remote branch__](https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch) <br>
+<img src="https://github.com/sergius-la/icon_links/blob/master/img/stackoverflow.png" width="13" height="13"> [__Create a remote branch__](https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch)
 ```shell
 git checkout -b <new_branch_name>
 git push --set-upstream origin <new_branch_name>
