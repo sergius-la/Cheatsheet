@@ -121,6 +121,11 @@ Show commit logs. <br>
 https://git-scm.com/docs/git-log <br>
 `git log`
 
+
+> Git Visual Branch Changes
+https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs <br>
+git log --graph --oneline --all
+
 ***
 
 #### Show
