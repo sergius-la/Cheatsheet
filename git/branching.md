@@ -23,8 +23,6 @@ git push origin :branch_to_be_deleted
 
 ## Local
 
-
-
 [__Rename branch__](https://www.notion.so/Git-a2117392da1d450bb04c1205e6fbd140#9ce31bcf67b24ef7a86ada1f60a064ed)
 ```shell
 # Other branch
