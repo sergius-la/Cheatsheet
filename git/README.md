@@ -5,6 +5,7 @@
 - [**Staging:**](/git/stage.md) `commit` `revert`
   - add
   - commit
+  - edit
 - [**Branching:**](/git/branching.md) `branch`
   - remote
   - local
