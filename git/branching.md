@@ -1,4 +1,4 @@
-## Branching
+# Branching
 
 | `git branch` | Local branches |
 | --- | --- |
