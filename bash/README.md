@@ -26,8 +26,14 @@ $ sh script.sh
 
 ## Variables
 
-Store command output into varialbe
+```bash
+PY=echo which python
+echo $PY
+```
 
+## Collections
+
+<img src="https://github.com/sergius-la/icon_links/blob/master/img/stackoverflow.png" width="14" height="14"> [**Stack OverFlow** Hash tables](https://stackoverflow.com/questions/1494178/how-to-define-hash-tables-in-bash)
 ```bash
 PY=echo which python
 echo $PY
