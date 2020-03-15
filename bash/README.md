@@ -54,3 +54,36 @@ function main() {
 # Call
 main
 ```
+
+## Script Arguments
+
+```bash
+# Check all arguments
+main $@
+```
+
+Script 
+```bash
+#!/bin/bash
+
+function main() {
+    check_args $@
+}
+
+function check_args() {
+    # echo "Input args:" "<"$@">"
+    
+    while getopts ":ht" opt; do
+        case ${opt} in  
+            t ) echo "'T' option is called";;
+            h ) help;;
+        esac
+    done
+}
+
+function help() {
+    echo "Usage: cmd [-h] [-t]"
+}
+
+main $@
+```
