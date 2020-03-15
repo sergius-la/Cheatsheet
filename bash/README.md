@@ -43,3 +43,14 @@ check() {
     fi
 }
 ```
+
+## Functions
+
+```bash
+# Function declaration
+function main() {
+    echo "Hello World"
+}
+# Call
+main
+```
