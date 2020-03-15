@@ -35,8 +35,7 @@ echo $PY
 
 <img src="https://github.com/sergius-la/icon_links/blob/master/img/stackoverflow.png" width="14" height="14"> [**Stack OverFlow** Hash tables](https://stackoverflow.com/questions/1494178/how-to-define-hash-tables-in-bash)
 ```bash
-PY=echo which python
-echo $PY
+declare -A animals=( ["moo"]="cow" ["woof"]="dog")
 ```
 
 Simple flag check
